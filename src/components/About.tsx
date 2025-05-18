@@ -1,44 +1,33 @@
-
 import React, { useEffect } from "react";
-
 const About: React.FC = () => {
   useEffect(() => {
     const observerOptions = {
-      threshold: 0.2,
+      threshold: 0.2
     };
-
-    const fadeObserver = new IntersectionObserver((entries) => {
+    const fadeObserver = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("is-visible");
         }
       });
     }, observerOptions);
-    
     const sections = document.querySelectorAll(".fade-in-section");
     sections.forEach(section => {
       fadeObserver.observe(section);
     });
-
     return () => {
       sections.forEach(section => {
         fadeObserver.unobserve(section);
       });
     };
   }, []);
-
-  return (
-    <section id="about" className="section bg-nordic-offwhite">
+  return <section id="about" className="section bg-nordic-offwhite">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           <div className="fade-in-section">
             <div className="relative">
               <div className="absolute inset-0 bg-nordic-green/10 transform rotate-3 rounded-lg"></div>
-              <img
-                src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb"
-                alt="Nordic landscape representing our philosophy"
-                className="w-full h-auto object-cover rounded-lg shadow-md relative z-10"
-              />
+              <img src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb" alt="Nordic landscape representing our philosophy" className="w-full h-auto object-cover rounded-lg shadow-md relative z-10" />
             </div>
           </div>
 
@@ -47,9 +36,7 @@ const About: React.FC = () => {
             <p className="mb-4">
               At Burgers by Westers, we believe that perfection doesn't require complexity. Our philosophy is rooted in the Nordic tradition of "lagom" – the art of perfect balance.
             </p>
-            <p className="mb-6">
-              While our flavors are classic rather than specifically Nordic, our approach to crafting these flavors embodies quintessential Scandinavian values: simplicity, functionality, and a profound respect for quality materials.
-            </p>
+            <p className="mb-6">Our flavors are classic but our approach to crafting these flavors embodies quintessential Scandinavian values: simplicity, functionality, and a profound respect for quality materials.</p>
             <div className="flex flex-wrap gap-4 mt-8">
               <div className="bg-nordic-wood/30 px-6 py-3 rounded-full">
                 <span className="font-medium">Quality Ingredients</span>
@@ -64,8 +51,6 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
