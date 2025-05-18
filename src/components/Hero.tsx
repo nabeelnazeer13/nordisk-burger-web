@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
     const handleScroll = () => {
       if (heroRef.current) {
         const scrollPosition = window.scrollY;
-        const opacity = 1 - Math.min(1, scrollPosition / 700);
+        const opacity = 1 - Math.min(1, scrollPosition / 500); // Adjusted for shorter section
         const translateY = scrollPosition * 0.3;
         
         heroRef.current.style.opacity = String(opacity);
@@ -21,14 +21,17 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+    <section id="home" className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-16">
       <div 
         className="absolute inset-0 bg-gradient-to-b from-nordic-green/30 to-transparent z-10"
         style={{ mixBlendMode: 'multiply' }}
       />
       <div 
-        className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1501854140801-50d01698950b')] bg-cover bg-center"
-        style={{ transform: 'scale(1.1)' }}
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ 
+          backgroundImage: "url('/lovable-uploads/40c6b861-6878-483d-93a7-9def60bb805d.png')",
+          transform: 'scale(1.1)' 
+        }}
       />
       <div className="container relative z-20" ref={heroRef}>
         <div className="max-w-2xl mx-auto text-center">
