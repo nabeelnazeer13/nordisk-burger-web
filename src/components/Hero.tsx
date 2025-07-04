@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
             <a href="#menu" className="btn btn-primary rounded-full shadow-lg">
               Explore Our Menu
             </a>
-            <a href="#visit" className="btn bg-nordic-offwhite/90 backdrop-blur-sm border border-nordic-charcoal/20 text-nordic-charcoal hover:bg-nordic-charcoal hover:text-nordic-offwhite rounded-full transition-all duration-300 shadow-lg">
+            <a href="#map" className="btn bg-nordic-offwhite/90 backdrop-blur-sm border border-nordic-charcoal/20 text-nordic-charcoal hover:bg-nordic-charcoal hover:text-nordic-offwhite rounded-full transition-all duration-300 shadow-lg">
               Find Us
             </a>
           </div>

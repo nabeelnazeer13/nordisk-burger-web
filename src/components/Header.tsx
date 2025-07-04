@@ -36,14 +36,19 @@ const Header: React.FC = () => {
             ${!isScrolled ? "md:bg-nordic-offwhite/90 md:backdrop-blur-sm md:px-2 sm:md:px-3 lg:md:px-4 md:py-1.5 sm:md:py-2 md:rounded-lg md:shadow-md" : ""}
           `}>
             <ul className="flex flex-col md:flex-row items-center gap-4 sm:gap-5 md:gap-2 lg:gap-3 xl:gap-4 text-base sm:text-lg md:text-xs lg:text-sm xl:text-base">
-              {["Home", "About", "Menu", "Visit"].map(item => <li key={item}>
-                  <a href={`#${item.toLowerCase()}`} className={`relative font-medium transition-colors duration-200 whitespace-nowrap
+              {[
+                { name: "Home", href: "#home" },
+                { name: "About", href: "#about" },
+                { name: "Menu", href: "#menu" },
+                { name: "Visit", href: "#map" }
+              ].map(item => <li key={item.name}>
+                  <a href={item.href} className={`relative font-medium transition-colors duration-200 whitespace-nowrap
                     after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 
                     after:bg-nordic-green after:origin-bottom-right after:transition-transform after:duration-300 
                     hover:after:scale-x-100 hover:after:origin-bottom-left hover:text-nordic-green
                     text-nordic-charcoal px-0.5 sm:px-1 md:px-1 lg:px-1.5
                   `} onClick={() => setIsMenuOpen(false)}>
-                    {item}
+                    {item.name}
                   </a>
                 </li>)}
               <li className="mt-4 sm:mt-6 md:mt-0 md:ml-1 lg:ml-2">

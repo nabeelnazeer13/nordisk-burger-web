@@ -7,6 +7,7 @@ import Menu from "../components/Menu";
 import Newsletter from "../components/Newsletter";
 import InstagramFeed from "../components/InstagramFeed";
 import Footer from "../components/Footer";
+import GoogleMap from "../components/GoogleMap";
 
 const Index: React.FC = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const Index: React.FC = () => {
           <Newsletter />
         </div>
         <InstagramFeed />
+        <GoogleMap />
       </main>
       <Footer />
     </div>

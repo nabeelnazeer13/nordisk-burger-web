@@ -36,8 +36,8 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-medium mb-4">Visit Us</h4>
             <address className="not-italic text-nordic-offwhite/70">
-              <p>Storgatan 23</p>
-              <p>114 55 Stockholm</p>
+              <p>Gjörwellsgatan 28</p>
+              <p>112 60 Stockholm</p>
               <p className="mt-4">+46 8 123 45 67</p>
               <p>info@burgersbywesters.com</p>
             </address>
