@@ -24,20 +24,22 @@ const Hero: React.FC = () => {
     }} />
       <div className="container relative z-20" ref={heroRef}>
         <div className="max-w-2xl mx-auto text-center">
-          <h1 className="mb-6 drop-shadow-lg text-slate-950">
-            Perfect Simplicity.<br />Honest Flavor.
-          </h1>
-          <p className="font-light text-lg md:text-xl mb-8 drop-shadow-md text-slate-50">
-            Nordic-inspired burgers crafted with precision,<br />
-            quality ingredients, and nothing unnecessary.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="#menu" className="btn btn-primary rounded-full">
-              Explore Our Menu
-            </a>
-            <a href="#visit" className="btn border border-nordic-offwhite text-nordic-offwhite hover:bg-nordic-offwhite/10 rounded-full">
-              Find Us
-            </a>
+          <div className="bg-nordic-offwhite/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+            <h1 className="mb-6 text-nordic-charcoal">
+              Perfect Simplicity.<br />Honest Flavor.
+            </h1>
+            <p className="font-light text-lg md:text-xl mb-8 text-nordic-charcoal/80">
+              Nordic-inspired burgers crafted with precision,<br />
+              quality ingredients, and nothing unnecessary.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <a href="#menu" className="btn btn-primary rounded-full">
+                Explore Our Menu
+              </a>
+              <a href="#visit" className="btn border border-nordic-charcoal text-nordic-charcoal hover:bg-nordic-charcoal hover:text-nordic-offwhite rounded-full transition-colors">
+                Find Us
+              </a>
+            </div>
           </div>
         </div>
       </div>
