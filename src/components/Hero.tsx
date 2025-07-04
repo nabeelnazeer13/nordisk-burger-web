@@ -24,22 +24,20 @@ const Hero: React.FC = () => {
     }} />
       <div className="container relative z-20" ref={heroRef}>
         <div className="max-w-2xl mx-auto text-center">
-          <div className="bg-nordic-offwhite/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-            <h1 className="mb-6 text-nordic-charcoal">
-              Perfect Simplicity.<br />Honest Flavor.
-            </h1>
-            <p className="font-light text-lg md:text-xl mb-8 text-nordic-charcoal/80">
-              Nordic-inspired burgers crafted with precision,<br />
-              quality ingredients, and nothing unnecessary.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href="#menu" className="btn btn-primary rounded-full">
-                Explore Our Menu
-              </a>
-              <a href="#visit" className="btn border border-nordic-charcoal text-nordic-charcoal hover:bg-nordic-charcoal hover:text-nordic-offwhite rounded-full transition-colors">
-                Find Us
-              </a>
-            </div>
+          <h1 className="mb-6 inline-block bg-nordic-offwhite/90 backdrop-blur-sm px-6 py-3 rounded-xl shadow-lg text-nordic-charcoal">
+            Perfect Simplicity.<br />Honest Flavor.
+          </h1>
+          <p className="font-light text-lg md:text-xl mb-8 inline-block bg-nordic-offwhite/85 backdrop-blur-sm px-5 py-2 rounded-lg shadow-md text-nordic-charcoal/90">
+            Nordic-inspired burgers crafted with precision,<br />
+            quality ingredients, and nothing unnecessary.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#menu" className="btn btn-primary rounded-full shadow-lg">
+              Explore Our Menu
+            </a>
+            <a href="#visit" className="btn bg-nordic-offwhite/90 backdrop-blur-sm border border-nordic-charcoal/20 text-nordic-charcoal hover:bg-nordic-charcoal hover:text-nordic-offwhite rounded-full transition-all duration-300 shadow-lg">
+              Find Us
+            </a>
           </div>
         </div>
       </div>
