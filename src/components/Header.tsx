@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-nordic-offwhite/95 backdrop-blur-md shadow-sm py-3" : "bg-transparent py-5"}`}>
       <div className="container flex items-center justify-between">
         <a href="#" className="z-50 flex items-center">
-          <span className={`font-serif text-xl sm:text-2xl font-medium tracking-tight transition-all duration-300 ${isScrolled ? "text-nordic-charcoal" : "text-slate-50 bg-nordic-offwhite/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-md"}`}>
+          <span className={`font-serif text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium tracking-tight transition-all duration-300 text-nordic-charcoal whitespace-nowrap ${isScrolled ? "" : "bg-nordic-offwhite/90 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-lg shadow-md"}`}>
             Burgers by Westers
           </span>
         </a>
@@ -26,7 +26,7 @@ const Header: React.FC = () => {
           </div>
 
           <button onClick={toggleMenu} aria-label={isMenuOpen ? "Close menu" : "Open menu"} className={`z-50 p-2 md:hidden transition-all duration-300 ${!isScrolled ? "bg-nordic-offwhite/90 backdrop-blur-sm rounded-lg shadow-md" : ""}`}>
-            {isMenuOpen ? <X className={isScrolled ? "text-nordic-charcoal" : "text-nordic-charcoal"} /> : <Menu className={isScrolled ? "text-nordic-charcoal" : "text-nordic-charcoal"} />}
+            {isMenuOpen ? <X className="text-nordic-charcoal" /> : <Menu className="text-nordic-charcoal" />}
           </button>
 
           <nav className={`
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
                     after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 
                     after:bg-nordic-green after:origin-bottom-right after:transition-transform after:duration-300 
                     hover:after:scale-x-100 hover:after:origin-bottom-left hover:text-nordic-green
-                    ${isScrolled || isMenuOpen ? "text-nordic-charcoal" : "text-nordic-charcoal"}
+                    text-nordic-charcoal
                   `} onClick={() => setIsMenuOpen(false)}>
                     {item}
                   </a>
