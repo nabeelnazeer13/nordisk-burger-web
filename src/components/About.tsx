@@ -47,7 +47,13 @@ const About: React.FC = () => {
               <div className="bg-nordic-wood/30 px-6 py-3 rounded-full">
                 <span className="font-medium">Purposeful Design</span>
               </div>
-            </div>
+            <img 
+              src="/ChatGPT Image Jul 24, 2025 at 08_00_24 PM-3.jpg" 
+              srcSet="/ChatGPT Image Jul 24, 2025 at 08_00_24 PM-3.jpg 768w, /ChatGPT Image Jul 24, 2025 at 08_00_24 PM.jpg 1024w"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="Nordic landscape representing our philosophy" 
+              className="w-full h-auto object-cover rounded-lg shadow-md relative z-10" 
+            />
           </div>
         </div>
       </div>
