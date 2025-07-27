@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const LanguageToggle: React.FC = () => {
-  const [language, setLanguage] = useState<"en" | "sv">("en");
+  const { language, setLanguage } = useLanguage();
 
   const toggleLanguage = () => {
     setLanguage(language === "en" ? "sv" : "en");

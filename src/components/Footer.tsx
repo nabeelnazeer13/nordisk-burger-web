@@ -1,7 +1,12 @@
 
 import React from "react";
+import { useLanguage } from "../contexts/LanguageContext";
+import enTranslations from "../locales/en.json";
+import svTranslations from "../locales/sv.json";
 
 const Footer: React.FC = () => {
+  const { language } = useLanguage();
+  const t = language === 'en' ? enTranslations : svTranslations;
   const year = new Date().getFullYear();
 
   return (
@@ -13,9 +18,9 @@ const Footer: React.FC = () => {
       <div className="container relative z-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <h3 className="text-xl mb-4">Burgers by Westers</h3>
+            <h3 className="text-xl mb-4">{t.footer.brandName}</h3>
             <p className="text-nordic-offwhite/70 mb-6">
-              Nordic-inspired burgers crafted with simplicity and precision.
+              {t.footer.description}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-nordic-offwhite/70 hover:text-nordic-blue transition-colors">
@@ -34,46 +39,47 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h4 className="font-medium mb-4">Visit Us</h4>
+            <h4 className="font-medium mb-4">{t.footer.visitUs}</h4>
             <address className="not-italic text-nordic-offwhite/70">
-              <p>Gjörwellsgatan 28</p>
-              <p>112 60 Stockholm</p>
-              <p className="mt-4">+46 8 123 45 67</p>
-              <p>info@burgersbywesters.com</p>
+              {t.footer.address.split('\n').map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
+              <p className="mt-4">{t.footer.phone}</p>
+              <p>{t.footer.email}</p>
             </address>
           </div>
           
           <div>
-            <h4 className="font-medium mb-4">Hours</h4>
+            <h4 className="font-medium mb-4">{t.footer.hours}</h4>
             <ul className="text-nordic-offwhite/70">
               <li className="flex justify-between mb-2">
-                <span>Monday - Thursday</span>
+                <span>{t.footer.mondayThursday}</span>
                 <span>11:00 - 21:00</span>
               </li>
               <li className="flex justify-between mb-2">
-                <span>Friday - Saturday</span>
+                <span>{t.footer.fridaySaturday}</span>
                 <span>11:00 - 22:00</span>
               </li>
               <li className="flex justify-between">
-                <span>Sunday</span>
+                <span>{t.footer.sunday}</span>
                 <span>12:00 - 20:00</span>
               </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-medium mb-4">Information</h4>
+            <h4 className="font-medium mb-4">{t.footer.information}</h4>
             <ul className="space-y-2 text-nordic-offwhite/70">
-              <li><a href="#" className="hover:text-nordic-blue transition-colors">Allergens</a></li>
-              <li><a href="#" className="hover:text-nordic-blue transition-colors">Sustainability</a></li>
-              <li><a href="#" className="hover:text-nordic-blue transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-nordic-blue transition-colors">Careers</a></li>
+              <li><a href="#" className="hover:text-nordic-blue transition-colors">{t.footer.allergens}</a></li>
+              <li><a href="#" className="hover:text-nordic-blue transition-colors">{t.footer.sustainability}</a></li>
+              <li><a href="#" className="hover:text-nordic-blue transition-colors">{t.footer.privacyPolicy}</a></li>
+              <li><a href="#" className="hover:text-nordic-blue transition-colors">{t.footer.careers}</a></li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-nordic-offwhite/10 mt-10 pt-6 text-center text-sm text-nordic-offwhite/50">
-          <p>&copy; {year} Burgers by Westers. All rights reserved.</p>
+          <p>&copy; {year} {t.footer.brandName}. {t.footer.copyright}</p>
         </div>
       </div>
     </footer>

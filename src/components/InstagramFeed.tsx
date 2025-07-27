@@ -1,5 +1,8 @@
 
 import React, { useEffect } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
+import enTranslations from "../locales/en.json";
+import svTranslations from "../locales/sv.json";
 
 interface InstagramPost {
   id: string;
@@ -37,6 +40,9 @@ const instagramPosts: InstagramPost[] = [
 ];
 
 const InstagramFeed: React.FC = () => {
+  const { language } = useLanguage();
+  const t = language === 'en' ? enTranslations : svTranslations;
+
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -69,10 +75,10 @@ const InstagramFeed: React.FC = () => {
     <section className="section">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center mb-10 fade-in-section">
-          <h2 className="mb-4">Follow Our Journey</h2>
-          <p>See what's happening at Burgers by Westers through our Instagram feed.</p>
+          <h2 className="mb-4">{t.instagram.title}</h2>
+          <p>{t.instagram.description}</p>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-nordic-terracotta hover:text-nordic-terracotta/80 mt-2 gap-1">
-            @burgersbywesters
+            {t.instagram.handle}
           </a>
         </div>
 

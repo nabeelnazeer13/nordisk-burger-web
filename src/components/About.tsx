@@ -1,5 +1,12 @@
 import React, { useEffect } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
+import enTranslations from "../locales/en.json";
+import svTranslations from "../locales/sv.json";
+
 const About: React.FC = () => {
+  const { language } = useLanguage();
+  const t = language === 'en' ? enTranslations : svTranslations;
+
   useEffect(() => {
     const observerOptions = {
       threshold: 0.2
@@ -24,11 +31,11 @@ const About: React.FC = () => {
   return <section id="about" className="section bg-nordic-offwhite">
       <div className="container">
         <div className="fade-in-section text-center mb-12">
-          <h2 className="mb-6">Nordic calm. Classic taste</h2>
+          <h2 className="mb-6">{t.about.title}</h2>
           <p className="mb-4 max-w-3xl mx-auto">
-            At Burgers by Westers, we believe that perfection doesn't require complexity. Our philosophy is rooted in the Nordic traditions of "lagom" – the calmness of perfect balance.
+            {t.about.description1}
           </p>
-          <p className="mb-8 max-w-3xl mx-auto">Our flavors are classic but our approach to crafting is Scandinavian : beautiful and functional with a respect for quality.</p>
+          <p className="mb-8 max-w-3xl mx-auto">{t.about.description2}</p>
         </div>
         
         <div className="fade-in-section mb-12">
@@ -44,13 +51,13 @@ const About: React.FC = () => {
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <div className="bg-nordic-wood/30 px-6 py-3 rounded-full">
-                <span className="font-medium">Quality Ingredients</span>
+                <span className="font-medium">{t.about.qualityIngredients}</span>
               </div>
               <div className="bg-nordic-wood/30 px-6 py-3 rounded-full">
-                <span className="font-medium">Sustainable Sourcing</span>
+                <span className="font-medium">{t.about.sustainableSourcing}</span>
               </div>
               <div className="bg-nordic-wood/30 px-6 py-3 rounded-full">
-                <span className="font-medium">Purposeful Design</span>
+                <span className="font-medium">{t.about.purposefulDesign}</span>
               </div>
             </div>
           </div>

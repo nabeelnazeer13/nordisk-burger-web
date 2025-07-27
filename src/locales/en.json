@@ -1,0 +1,100 @@
+{
+  "header": {
+    "brandName": "Burgers by Westers",
+    "home": "Home",
+    "about": "About",
+    "menu": "Menu",
+    "visit": "Visit",
+    "orderNow": "Order Now"
+  },
+  "hero": {
+    "title": "Perfect Simplicity.\nHonest Flavor.",
+    "subtitle": "Nordic-inspired burgers crafted with precision,\nquality ingredients, and nothing unnecessary.",
+    "exploreMenu": "Explore Our Menu",
+    "findUs": "Find Us"
+  },
+  "about": {
+    "title": "Nordic calm. Classic taste",
+    "description1": "At Burgers by Westers, we believe that perfection doesn't require complexity. Our philosophy is rooted in the Nordic traditions of \"lagom\" – the calmness of perfect balance.",
+    "description2": "Our flavors are classic but our approach to crafting is Scandinavian : beautiful and functional with a respect for quality.",
+    "qualityIngredients": "Quality Ingredients",
+    "sustainableSourcing": "Sustainable Sourcing",
+    "purposefulDesign": "Purposeful Design"
+  },
+  "menu": {
+    "title": "Our Menu",
+    "description": "Each item is crafted with purpose, using locally sourced ingredients. Nothing unnecessary, everything essential.",
+    "burgers": "Burgers",
+    "sides": "Sides",
+    "drinks": "Drinks",
+    "fullMenu": "Full Menu & Allergens",
+    "items": {
+      "classicWesters": {
+        "name": "Classic Westers",
+        "description": "Premium Swedish beef, homemade aioli, lettuce, tomato, pickled red onion on a freshly baked bun"
+      },
+      "forestMushroom": {
+        "name": "Forest Mushroom",
+        "description": "Premium beef, wild mushrooms, caramelized onions, truffle mayo, aged cheese, and arugula"
+      },
+      "nordicBlue": {
+        "name": "Nordic Blue",
+        "description": "Premium beef, mild blue cheese, caramelized pears, bacon, and balsamic glaze"
+      },
+      "handCutFries": {
+        "name": "Hand-Cut Potato Fries",
+        "description": "Swedish potatoes with sea salt and herbs"
+      },
+      "rootVegetables": {
+        "name": "Root Vegetables",
+        "description": "Seasonal Nordic root vegetables with dill and juniper"
+      },
+      "lingonberrySoda": {
+        "name": "Lingonberry Soda",
+        "description": "Housemade with wild lingonberries and minimal sugar"
+      }
+    }
+  },
+  "newsletter": {
+    "title": "Join the Westers Family",
+    "description": "Sign up for our newsletter and receive a coupon code for your next visit.",
+    "firstNamePlaceholder": "First name",
+    "emailPlaceholder": "Email address",
+    "signUp": "Sign up",
+    "signingUp": "Signing up...",
+    "privacyText": "By signing up, you agree to our privacy policy. We'll send you occasional news and offers.",
+    "successTitle": "Thanks for signing up!",
+    "successDescription": "Your coupon code will be sent to your email shortly."
+  },
+  "instagram": {
+    "title": "Follow Our Journey",
+    "description": "See what's happening at Burgers by Westers through our Instagram feed.",
+    "handle": "@burgersbywesters"
+  },
+  "map": {
+    "title": "Find Us",
+    "description": "Visit us at our Stockholm location",
+    "address": "Gjörwellsgatan 28, 112 60 Stockholm",
+    "openInMaps": "Open in Google Maps",
+    "getDirections": "Get Directions",
+    "clickToOpen": "Click to open in Google Maps"
+  },
+  "footer": {
+    "brandName": "Burgers by Westers",
+    "description": "Nordic-inspired burgers crafted with simplicity and precision.",
+    "visitUs": "Visit Us",
+    "address": "Gjörwellsgatan 28\n112 60 Stockholm",
+    "phone": "+46 8 123 45 67",
+    "email": "info@burgersbywesters.com",
+    "hours": "Hours",
+    "mondayThursday": "Monday - Thursday",
+    "fridaySaturday": "Friday - Saturday",
+    "sunday": "Sunday",
+    "information": "Information",
+    "allergens": "Allergens",
+    "sustainability": "Sustainability",
+    "privacyPolicy": "Privacy Policy",
+    "careers": "Careers",
+    "copyright": "All rights reserved."
+  }
+}

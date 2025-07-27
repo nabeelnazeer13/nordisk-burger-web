@@ -1,0 +1,100 @@
+{
+  "header": {
+    "brandName": "Burgers by Westers",
+    "home": "Hem",
+    "about": "Om oss",
+    "menu": "Meny",
+    "visit": "Besök",
+    "orderNow": "Beställ nu"
+  },
+  "hero": {
+    "title": "Perfekt enkelhet.\nÄrlig smak.",
+    "subtitle": "Nordiskt inspirerade burgare skapade med precision,\nkvalitetsingredienser och inget onödigt.",
+    "exploreMenu": "Utforska vår meny",
+    "findUs": "Hitta oss"
+  },
+  "about": {
+    "title": "Nordiskt lugn. Klassisk smak",
+    "description1": "På Burgers by Westers tror vi att perfektion inte kräver komplexitet. Vår filosofi är rotad i de nordiska traditionerna av \"lagom\" – lugnet av perfekt balans.",
+    "description2": "Våra smaker är klassiska men vårt tillvägagångssätt för att skapa är skandinaviskt: vackert och funktionellt med respekt för kvalitet.",
+    "qualityIngredients": "Kvalitetsingredienser",
+    "sustainableSourcing": "Hållbar inköp",
+    "purposefulDesign": "Målmedveten design"
+  },
+  "menu": {
+    "title": "Vår meny",
+    "description": "Varje artikel är skapad med syfte, med lokalt inköpta ingredienser. Inget onödigt, allt väsentligt.",
+    "burgers": "Burgare",
+    "sides": "Tillbehör",
+    "drinks": "Drycker",
+    "fullMenu": "Fullständig meny & allergener",
+    "items": {
+      "classicWesters": {
+        "name": "Classic Westers",
+        "description": "Premium svenskt nötkött, hemgjord aioli, sallad, tomat, inlagd rödlök på ett färskbakat bröd"
+      },
+      "forestMushroom": {
+        "name": "Skogschampinjon",
+        "description": "Premium nötkött, vilda svampar, karamelliserad lök, tryffelmajo, lagrad ost och rucola"
+      },
+      "nordicBlue": {
+        "name": "Nordic Blue",
+        "description": "Premium nötkött, mild blåmögelost, karamelliserade päron, bacon och balsamicoglasyr"
+      },
+      "handCutFries": {
+        "name": "Handskurna potatispommes",
+        "description": "Svenska potatisar med havssalt och örter"
+      },
+      "rootVegetables": {
+        "name": "Rotfrukter",
+        "description": "Säsongens nordiska rotfrukter med dill och enbär"
+      },
+      "lingonberrySoda": {
+        "name": "Lingonläsk",
+        "description": "Hemgjord med vilda lingon och minimal socker"
+      }
+    }
+  },
+  "newsletter": {
+    "title": "Gå med i Westers-familjen",
+    "description": "Registrera dig för vårt nyhetsbrev och få en kupongkod för ditt nästa besök.",
+    "firstNamePlaceholder": "Förnamn",
+    "emailPlaceholder": "E-postadress",
+    "signUp": "Registrera dig",
+    "signingUp": "Registrerar...",
+    "privacyText": "Genom att registrera dig godkänner du vår integritetspolicy. Vi skickar dig enstaka nyheter och erbjudanden.",
+    "successTitle": "Tack för att du registrerade dig!",
+    "successDescription": "Din kupongkod kommer att skickas till din e-post inom kort."
+  },
+  "instagram": {
+    "title": "Följ vår resa",
+    "description": "Se vad som händer på Burgers by Westers genom vårt Instagram-flöde.",
+    "handle": "@burgersbywesters"
+  },
+  "map": {
+    "title": "Hitta oss",
+    "description": "Besök oss på vår Stockholm-plats",
+    "address": "Gjörwellsgatan 28, 112 60 Stockholm",
+    "openInMaps": "Öppna i Google Maps",
+    "getDirections": "Få vägbeskrivning",
+    "clickToOpen": "Klicka för att öppna i Google Maps"
+  },
+  "footer": {
+    "brandName": "Burgers by Westers",
+    "description": "Nordiskt inspirerade burgare skapade med enkelhet och precision.",
+    "visitUs": "Besök oss",
+    "address": "Gjörwellsgatan 28\n112 60 Stockholm",
+    "phone": "+46 8 123 45 67",
+    "email": "info@burgersbywesters.com",
+    "hours": "Öppettider",
+    "mondayThursday": "Måndag - Torsdag",
+    "fridaySaturday": "Fredag - Lördag",
+    "sunday": "Söndag",
+    "information": "Information",
+    "allergens": "Allergener",
+    "sustainability": "Hållbarhet",
+    "privacyPolicy": "Integritetspolicy",
+    "careers": "Karriär",
+    "copyright": "Alla rättigheter förbehållna."
+  }
+}

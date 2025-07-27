@@ -1,5 +1,11 @@
 import React, { useEffect, useRef } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
+import enTranslations from "../locales/en.json";
+import svTranslations from "../locales/sv.json";
+
 const Hero: React.FC = () => {
+  const { language } = useLanguage();
+  const t = language === 'en' ? enTranslations : svTranslations;
   const heroRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const handleScroll = () => {
@@ -25,18 +31,27 @@ const Hero: React.FC = () => {
       <div className="container relative z-20" ref={heroRef}>
         <div className="max-w-2xl mx-auto text-center">
           <h1 className="mb-6 inline-block bg-nordic-offwhite/90 backdrop-blur-sm px-6 py-3 rounded-xl shadow-lg text-nordic-charcoal">
-            Perfect Simplicity.<br />Honest Flavor.
+            {t.hero.title.split('\n').map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                {index < t.hero.title.split('\n').length - 1 && <br />}
+              </React.Fragment>
+            ))}
           </h1>
           <p className="font-light text-lg md:text-xl mb-8 inline-block bg-nordic-offwhite/85 backdrop-blur-sm px-5 py-2 rounded-lg shadow-md text-nordic-charcoal/90">
-            Nordic-inspired burgers crafted with precision,<br />
-            quality ingredients, and nothing unnecessary.
+            {t.hero.subtitle.split('\n').map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                {index < t.hero.subtitle.split('\n').length - 1 && <br />}
+              </React.Fragment>
+            ))}
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a href="#menu" className="btn btn-primary rounded-full shadow-lg">
-              Explore Our Menu
+              {t.hero.exploreMenu}
             </a>
             <a href="#map" className="btn bg-nordic-offwhite/90 backdrop-blur-sm border border-nordic-charcoal/20 text-nordic-charcoal hover:bg-nordic-charcoal hover:text-nordic-offwhite rounded-full transition-all duration-300 shadow-lg">
-              Find Us
+              {t.hero.findUs}
             </a>
           </div>
         </div>

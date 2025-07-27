@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
+import enTranslations from "../locales/en.json";
+import svTranslations from "../locales/sv.json";
 import LanguageToggle from "./LanguageToggle";
+
 const Header: React.FC = () => {
+  const { language } = useLanguage();
+  const t = language === 'en' ? enTranslations : svTranslations;
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   useEffect(() => {
@@ -16,7 +22,7 @@ const Header: React.FC = () => {
       <div className="container flex items-center justify-between">
         <a href="#" className="z-50 flex items-center">
           <span className={`font-serif text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium tracking-tight transition-all duration-300 text-nordic-charcoal whitespace-nowrap ${isScrolled ? "" : "bg-nordic-offwhite/90 backdrop-blur-sm px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 rounded-lg shadow-md"}`}>
-            Burgers by Westers
+            {t.header.brandName}
           </span>
         </a>
 
@@ -37,10 +43,10 @@ const Header: React.FC = () => {
           `}>
             <ul className="flex flex-col md:flex-row items-center gap-4 sm:gap-5 md:gap-2 lg:gap-3 xl:gap-4 text-base sm:text-lg md:text-xs lg:text-sm xl:text-base">
               {[
-                { name: "Home", href: "#home" },
-                { name: "About", href: "#about" },
-                { name: "Menu", href: "#menu" },
-                { name: "Visit", href: "#map" }
+                { name: t.header.home, href: "#home" },
+                { name: t.header.about, href: "#about" },
+                { name: t.header.menu, href: "#menu" },
+                { name: t.header.visit, href: "#map" }
               ].map(item => <li key={item.name}>
                   <a href={item.href} className={`relative font-medium transition-colors duration-200 whitespace-nowrap
                     after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 
@@ -53,7 +59,7 @@ const Header: React.FC = () => {
                 </li>)}
               <li className="mt-4 sm:mt-6 md:mt-0 md:ml-1 lg:ml-2">
                 <a href="#contact" className="btn btn-primary rounded-full shadow-lg text-xs sm:text-sm md:text-xs lg:text-sm xl:text-sm px-2 sm:px-3 md:px-2 lg:px-3 xl:px-4 py-1.5 sm:py-2 md:py-1.5 lg:py-2 whitespace-nowrap" onClick={() => setIsMenuOpen(false)}>
-                  Order Now
+                  {t.header.orderNow}
                 </a>
               </li>
             </ul>

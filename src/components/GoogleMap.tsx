@@ -1,6 +1,11 @@
 import React from "react";
+import { useLanguage } from "../contexts/LanguageContext";
+import enTranslations from "../locales/en.json";
+import svTranslations from "../locales/sv.json";
 
 const GoogleMap: React.FC = () => {
+  const { language } = useLanguage();
+  const t = language === 'en' ? enTranslations : svTranslations;
   const address = "Gjörwellsgatan 28, 112 60 Stockholm";
   const encodedAddress = encodeURIComponent(address);
   
@@ -12,9 +17,9 @@ const GoogleMap: React.FC = () => {
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8 fade-in-section">
-            <h2 className="mb-4">Find Us</h2>
-            <p className="text-nordic-charcoal/75 mb-2">Visit us at our Stockholm location</p>
-            <p className="font-medium text-nordic-green">{address}</p>
+           <h2 className="mb-4">{t.map.title}</h2>
+           <p className="text-nordic-charcoal/75 mb-2">{t.map.description}</p>
+           <p className="font-medium text-nordic-green">{t.map.address}</p>
           </div>
           
           <div className="fade-in-section">
@@ -25,11 +30,11 @@ const GoogleMap: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full h-full relative"
-                aria-label="Open location in Google Maps"
+                aria-label={t.map.openInMaps}
               >
                 <img
                   src={staticMapUrl}
-                  alt={`Map showing location of ${address}`}
+                  alt={`Map showing location of ${t.map.address}`}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 
@@ -38,14 +43,14 @@ const GoogleMap: React.FC = () => {
                   <div className="absolute bottom-6 left-6 right-6 text-nordic-offwhite">
                     <div className="bg-nordic-offwhite/95 backdrop-blur-sm text-nordic-charcoal px-4 py-3 rounded-lg shadow-lg">
                       <h3 className="font-medium text-lg mb-1">Burgers by Westers</h3>
-                      <p className="text-sm opacity-75">{address}</p>
+                      <p className="text-sm opacity-75">{t.map.address}</p>
                     </div>
                   </div>
                 </div>
                 
                 {/* Click indicator */}
                 <div className="absolute top-4 right-4 bg-nordic-offwhite/90 backdrop-blur-sm px-3 py-2 rounded-lg shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-xs font-medium text-nordic-charcoal">Click to open in Google Maps</p>
+                  <p className="text-xs font-medium text-nordic-charcoal">{t.map.clickToOpen}</p>
                 </div>
                 
                 {/* Location pin icon */}
@@ -70,7 +75,7 @@ const GoogleMap: React.FC = () => {
                 rel="noopener noreferrer"
                 className="btn btn-primary rounded-full shadow-lg"
               >
-                Open in Google Maps
+                {t.map.openInMaps}
               </a>
               <a 
                 href={`https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`}
@@ -78,7 +83,7 @@ const GoogleMap: React.FC = () => {
                 rel="noopener noreferrer"
                 className="btn bg-nordic-blue text-nordic-charcoal hover:bg-nordic-blue/90 rounded-full shadow-lg"
               >
-                Get Directions
+                {t.map.getDirections}
               </a>
             </div>
           </div>

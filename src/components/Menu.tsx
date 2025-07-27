@@ -1,5 +1,8 @@
 
 import React, { useEffect } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
+import enTranslations from "../locales/en.json";
+import svTranslations from "../locales/sv.json";
 
 interface MenuItem {
   name: string;
@@ -48,6 +51,9 @@ const menuItems: MenuItem[] = [
 ];
 
 const Menu: React.FC = () => {
+  const { language } = useLanguage();
+  const t = language === 'en' ? enTranslations : svTranslations;
+
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -74,22 +80,61 @@ const Menu: React.FC = () => {
   }, []);
 
   const categorizedItems = {
-    burgers: menuItems.filter(item => item.category === "burgers"),
-    sides: menuItems.filter(item => item.category === "sides"),
-    drinks: menuItems.filter(item => item.category === "drinks"),
+    burgers: [
+      {
+        name: t.menu.items.classicWesters.name,
+        description: t.menu.items.classicWesters.description,
+        price: "109 kr",
+        category: "burgers"
+      },
+      {
+        name: t.menu.items.forestMushroom.name,
+        description: t.menu.items.forestMushroom.description,
+        price: "129 kr",
+        category: "burgers"
+      },
+      {
+        name: t.menu.items.nordicBlue.name,
+        description: t.menu.items.nordicBlue.description,
+        price: "139 kr",
+        category: "burgers"
+      }
+    ],
+    sides: [
+      {
+        name: t.menu.items.handCutFries.name,
+        description: t.menu.items.handCutFries.description,
+        price: "45 kr",
+        category: "sides"
+      },
+      {
+        name: t.menu.items.rootVegetables.name,
+        description: t.menu.items.rootVegetables.description,
+        price: "49 kr",
+        category: "sides"
+      }
+    ],
+    drinks: [
+      {
+        name: t.menu.items.lingonberrySoda.name,
+        description: t.menu.items.lingonberrySoda.description,
+        price: "39 kr",
+        category: "drinks"
+      }
+    ]
   };
 
   return (
     <section id="menu" className="section bg-nordic-wood/10">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center mb-12 fade-in-section">
-          <h2 className="mb-4">Our Menu</h2>
-          <p>Each item is crafted with purpose, using locally sourced ingredients. Nothing unnecessary, everything essential.</p>
+          <h2 className="mb-4">{t.menu.title}</h2>
+          <p>{t.menu.description}</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 max-w-4xl mx-auto">
           <div className="fade-in-section">
-            <h3 className="text-xl font-medium mb-6 pb-2 border-b border-nordic-green/20">Burgers</h3>
+            <h3 className="text-xl font-medium mb-6 pb-2 border-b border-nordic-green/20">{t.menu.burgers}</h3>
             <div className="space-y-8">
               {categorizedItems.burgers.map((item, index) => (
                 <div key={index} className="group">
@@ -105,7 +150,7 @@ const Menu: React.FC = () => {
           
           <div>
             <div className="fade-in-section mb-12">
-              <h3 className="text-xl font-medium mb-6 pb-2 border-b border-nordic-green/20">Sides</h3>
+              <h3 className="text-xl font-medium mb-6 pb-2 border-b border-nordic-green/20">{t.menu.sides}</h3>
               <div className="space-y-8">
                 {categorizedItems.sides.map((item, index) => (
                   <div key={index} className="group">
@@ -120,7 +165,7 @@ const Menu: React.FC = () => {
             </div>
             
             <div className="fade-in-section">
-              <h3 className="text-xl font-medium mb-6 pb-2 border-b border-nordic-green/20">Drinks</h3>
+              <h3 className="text-xl font-medium mb-6 pb-2 border-b border-nordic-green/20">{t.menu.drinks}</h3>
               <div className="space-y-8">
                 {categorizedItems.drinks.map((item, index) => (
                   <div key={index} className="group">
@@ -137,7 +182,7 @@ const Menu: React.FC = () => {
         </div>
 
         <div className="text-center mt-12 fade-in-section">
-          <a href="#" className="btn btn-primary rounded-full">Full Menu & Allergens</a>
+          <a href="#" className="btn btn-primary rounded-full">{t.menu.fullMenu}</a>
         </div>
       </div>
     </section>

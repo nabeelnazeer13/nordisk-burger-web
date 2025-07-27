@@ -1,8 +1,13 @@
 
 import React, { useState } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
+import enTranslations from "../locales/en.json";
+import svTranslations from "../locales/sv.json";
 import { toast } from "sonner";
 
 const Newsletter: React.FC = () => {
+  const { language } = useLanguage();
+  const t = language === 'en' ? enTranslations : svTranslations;
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -13,8 +18,8 @@ const Newsletter: React.FC = () => {
     
     // Simulate API call
     setTimeout(() => {
-      toast.success("Thanks for signing up!", {
-        description: "Your coupon code will be sent to your email shortly."
+      toast.success(t.newsletter.successTitle, {
+        description: t.newsletter.successDescription
       });
       setName("");
       setEmail("");
@@ -26,16 +31,16 @@ const Newsletter: React.FC = () => {
     <section className="section bg-nordic-green text-nordic-offwhite">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="mb-4">Join the Westers Family</h2>
+          <h2 className="mb-4">{t.newsletter.title}</h2>
           <p className="text-nordic-offwhite/80 mb-8">
-            Sign up for our newsletter and receive a coupon code for your next visit.
+            {t.newsletter.description}
           </p>
           
           <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-0 sm:flex sm:gap-3 max-w-md mx-auto">
             <div className="flex-1">
               <input
                 type="text"
-                placeholder="First name"
+                placeholder={t.newsletter.firstNamePlaceholder}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
@@ -45,7 +50,7 @@ const Newsletter: React.FC = () => {
             <div className="flex-1">
               <input
                 type="email"
-                placeholder="Email address"
+                placeholder={t.newsletter.emailPlaceholder}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -58,13 +63,13 @@ const Newsletter: React.FC = () => {
                 disabled={isSubmitting} 
                 className="w-full sm:w-auto px-6 py-3 rounded-md bg-nordic-terracotta text-nordic-offwhite font-medium hover:bg-nordic-terracotta/90 transition-colors disabled:opacity-70"
               >
-                {isSubmitting ? "Signing up..." : "Sign up"}
+                {isSubmitting ? t.newsletter.signingUp : t.newsletter.signUp}
               </button>
             </div>
           </form>
           
           <p className="text-xs text-nordic-offwhite/60 mt-4">
-            By signing up, you agree to our privacy policy. We'll send you occasional news and offers.
+            {t.newsletter.privacyText}
           </p>
         </div>
       </div>
