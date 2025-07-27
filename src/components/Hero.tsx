@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
       transform: 'scale(1.1)'
     }} />
       <div className="container relative z-20" ref={heroRef}>
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-sm sm:max-w-lg md:max-w-2xl mx-auto text-center">
           <h1 className="mb-6 inline-block bg-nordic-offwhite/90 backdrop-blur-sm px-6 py-3 rounded-xl shadow-lg text-nordic-charcoal">
             {t.hero.title.split('\n').map((line, index) => (
               <React.Fragment key={index}>
@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
               </React.Fragment>
             ))}
           </h1>
-          <p className="font-light text-lg md:text-xl mb-8 inline-block bg-nordic-offwhite/85 backdrop-blur-sm px-5 py-2 rounded-lg shadow-md text-nordic-charcoal/90">
+          <p className="font-light text-lg md:text-xl mb-8 inline-block bg-nordic-offwhite/85 backdrop-blur-sm px-4 py-2 rounded-lg shadow-md text-nordic-charcoal/90">
             {t.hero.subtitle.split('\n').map((line, index) => (
               <React.Fragment key={index}>
                 {line}
