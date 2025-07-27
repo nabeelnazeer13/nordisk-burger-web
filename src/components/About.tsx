@@ -47,6 +47,7 @@ const About: React.FC = () => {
               <div className="bg-nordic-wood/30 px-6 py-3 rounded-full">
                 <span className="font-medium">Purposeful Design</span>
               </div>
+            </div>
             <img 
               src="/ChatGPT Image Jul 24, 2025 at 08_00_24 PM-3.jpg" 
               srcSet="/ChatGPT Image Jul 24, 2025 at 08_00_24 PM-3.jpg 768w, /ChatGPT Image Jul 24, 2025 at 08_00_24 PM.jpg 1024w"
@@ -58,6 +59,3 @@ const About: React.FC = () => {
         </div>
       </div>
     </section>;
-};
-export default About;
-}
