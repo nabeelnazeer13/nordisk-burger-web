@@ -24,11 +24,11 @@ const About: React.FC = () => {
   return <section id="about" className="section bg-nordic-offwhite">
       <div className="container">
         <div className="fade-in-section text-center mb-12">
-          <h2 className="mb-6">The Essence of Nordic Simplicity</h2>
+          <h2 className="mb-6">Nordic calm. Classic taste</h2>
           <p className="mb-4 max-w-3xl mx-auto">
-            At Burgers by Westers, we believe that perfection doesn't require complexity. Our philosophy is rooted in the Nordic tradition of "lagom" – the art of perfect balance.
+            At Burgers by Westers, we believe that perfection doesn't require complexity. Our philosophy is rooted in the Nordic traditions of "lagom" – the calmness of perfect balance.
           </p>
-          <p className="mb-8 max-w-3xl mx-auto">Our flavors are classic but our approach to crafting these flavors embodies quintessential Scandinavian values: simplicity, functionality, and a profound respect for quality materials.</p>
+          <p className="mb-8 max-w-3xl mx-auto">Our flavors are classic but our approach to crafting is Scandinavian : beautiful and functional with a respect for quality.</p>
         </div>
         
         <div className="fade-in-section mb-12">
