@@ -27,7 +27,7 @@ const About: React.FC = () => {
           <div className="fade-in-section">
             <div className="relative">
               <div className="absolute inset-0 bg-nordic-green/10 transform rotate-3 rounded-lg"></div>
-              <img src="/lovable-uploads/NORDISKBURGARE.png" alt="Nordic landscape representing our philosophy" className="w-full h-auto object-cover rounded-lg shadow-md relative z-10" />
+              <img src="/lovable-uploads/NORDISKBURGARE.png" alt="Nordic landscape representing our philosophy" className="w-full h-96 md:h-[500px] object-cover rounded-lg shadow-md relative z-10" />
             </div>
           </div>
 
