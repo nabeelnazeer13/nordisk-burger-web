@@ -15,25 +15,25 @@ interface InstagramPost {
 const instagramPosts: InstagramPost[] = [
   {
     id: "1",
-    imageUrl: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9",
+    imageUrl: "/290d1d20-dd3f-4951-945e-29e90f29ea28.jpg",
     caption: "Simple ingredients, extraordinary flavor. #BurgersbyWesters #Nordic",
     likes: 142
   },
   {
     id: "2",
-    imageUrl: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb",
+    imageUrl: "/Burgers by Westers_White BG-01.jpg",
     caption: "We believe in letting quality speak for itself. #Minimalism",
     likes: 189
   },
   {
     id: "3",
-    imageUrl: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb",
+    imageUrl: "/dirty_fries.jpg",
     caption: "Inspired by Nordic simplicity and precision. #BurgerCraft",
     likes: 215
   },
   {
     id: "4",
-    imageUrl: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05",
+    imageUrl: "/pexels-chevanon-1108117.jpg",
     caption: "Locally sourced, carefully selected. #QualityFirst",
     likes: 167
   },
