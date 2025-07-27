@@ -60,3 +60,4 @@ const About: React.FC = () => {
     </section>;
 };
 export default About;
+}
