@@ -42,7 +42,7 @@ const About: React.FC = () => {
           <div className="max-w-4xl mx-auto">
             <div className="relative">
               <div className="absolute inset-0 bg-nordic-green/10 transform rotate-3 rounded-lg"></div>
-              <img src="/lovable-uploads/NORDISKBURGARE.png" alt="Nordic landscape representing our philosophy" className="w-full h-96 md:h-[500px] object-cover rounded-lg shadow-md relative z-10" />
+              <img src="/lovable-uploads/NORDISKBURGARE.png" alt="Nordic landscape representing our philosophy" className="w-full h-auto max-h-64 sm:max-h-80 md:h-[500px] object-contain rounded-lg shadow-md relative z-10" />
             </div>
           </div>
         </div>
