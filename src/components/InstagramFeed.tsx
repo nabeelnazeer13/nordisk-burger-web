@@ -78,7 +78,7 @@ const InstagramFeed: React.FC = () => {
           <h2 className="mb-4">{t.instagram.title}</h2>
           <p>{t.instagram.description}</p>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-nordic-terracotta hover:text-nordic-terracotta/80 mt-2 gap-1">
-            {t.instagram.handle}
+            @burgers.bywesters
           </a>
         </div>
 
@@ -86,7 +86,7 @@ const InstagramFeed: React.FC = () => {
           {instagramPosts.map((post, index) => (
             <a 
               key={post.id}
-              href={`https://instagram.com/p/${post.id}`}
+              href={`https://instagram.com/burgers.bywesters`}
               target="_blank"
               rel="noopener noreferrer"
               className="instagram-post group relative overflow-hidden rounded-lg aspect-square fade-in-section"
