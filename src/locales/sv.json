@@ -23,35 +23,94 @@
   },
   "menu": {
     "title": "Vår meny",
-    "description": "Varje artikel är skapad med syfte, med lokalt inköpta ingredienser. Inget onödigt, allt väsentligt.",
+    "description": "Skapad med nordisk precision och ärliga smaker. Varje burgare berättar en historia om kvalitet och tradition.",
     "burgers": "Burgare",
-    "sides": "Tillbehör",
-    "drinks": "Drycker",
+    "burgersSubtitle": "(Alla burgare serveras på potatisbröd med krispig sallad, ketchup, senap och våra egna pickles. Pommes & dryck ingår i priset.)",
+    "singlePatty": "Enkel Biff (100g)",
+    "doublePatty": "Dubbel Biff (2x100g)",
+    "halloumiSubstitute": "Byt nötkött mot halloumi (Halloumi burgare)",
+    "burgerSelection": "Burgarval",
+    "upgradeFries": "Uppgradera Dina Pommes",
+    "upgradeFriesSubtitle": "Gör dina pommes \"smutsiga\":",
+    "dirtyFries": "Smutsiga Pommes (250g Pommes)",
+    "dipsAndSauces": "Dips & Såser",
     "fullMenu": "Fullständig meny & allergener",
     "items": {
-      "classicWesters": {
-        "name": "Classic Westers",
-        "description": "Premium svenskt nötkött, hemgjord aioli, sallad, tomat, inlagd rödlök på ett färskbakat bröd"
+      "westersClassic": {
+        "name": "Westers Classic",
+        "description": "Cheddar, Westers dressing, karamelliserad lök"
       },
-      "forestMushroom": {
-        "name": "Skogschampinjon",
-        "description": "Premium nötkött, vilda svampar, karamelliserad lök, tryffelmajo, lagrad ost och rucola"
+      "fireJam": {
+        "name": "Fire Jam",
+        "description": "Cheddar, färsk jalapeño, inlagd jalapeño, karamelliserad lök, svartpepparmajo"
       },
-      "nordicBlue": {
-        "name": "Nordic Blue",
-        "description": "Premium nötkött, mild blåmögelost, karamelliserade päron, bacon och balsamicoglasyr"
+      "smokeStack": {
+        "name": "Smoke Stack",
+        "description": "Bacon jam, cheddar, chipotle mayo, krispig lök"
       },
-      "handCutFries": {
-        "name": "Handskurna potatispommes",
-        "description": "Svenska potatisar med havssalt och örter"
+      "tripleThreat": {
+        "name": "Triple Threat",
+        "description": "Cheddar, husostsås, pepper jack, inlagd rödlök"
       },
-      "rootVegetables": {
-        "name": "Rotfrukter",
-        "description": "Säsongens nordiska rotfrukter med dill och enbär"
+      "blueMoon": {
+        "name": "Blue Moon",
+        "description": "Blåmögelost, karamelliserad lök, buffalo sås"
       },
-      "lingonberrySoda": {
-        "name": "Lingonläsk",
-        "description": "Hemgjord med vilda lingon och minimal socker"
+      "guldgruvan": {
+        "name": "Guldgruvan",
+        "description": "Tryffelmajo, karamelliserad lök, cheddar"
+      },
+      "bbqJack": {
+        "name": "BBQ Jack (Vegan)",
+        "description": "Pulled jackfruit, BBQ sås, inlagd rödlök, vegansk cheddar"
+      },
+      "bakedPotato": {
+        "name": "\"Baked Potato\"",
+        "description": "Bacon, salladslök, gräddfil, lagrad cheddar"
+      },
+      "cheeseLovers": {
+        "name": "Cheese Lovers",
+        "description": "Husostsås, inlagd rödlök, inlagd jalapeño"
+      },
+      "chiliCheeseFries": {
+        "name": "Chili Cheese Fries",
+        "description": "Brisket chili, smält ost, hackad rödlök, gräddfil"
+      },
+      "truffleParmesan": {
+        "name": "Truffle Parmesan",
+        "description": "Tryffelmajo, riven Grana Padano, inlagd rödlök"
+      },
+      "garlic": {
+        "name": "Vitlök",
+        "description": ""
+      },
+      "westersDressing": {
+        "name": "Westers Dressing",
+        "description": ""
+      },
+      "bbq": {
+        "name": "BBQ",
+        "description": ""
+      },
+      "chipotleMayo": {
+        "name": "Chipotle Mayo",
+        "description": ""
+      },
+      "houseCheeseSauce": {
+        "name": "Husostsås",
+        "description": ""
+      },
+      "blackPepperMayo": {
+        "name": "Svartpepparmajo",
+        "description": ""
+      },
+      "truffleMayo": {
+        "name": "Tryffelmajo",
+        "description": ""
+      },
+      "buffaloSauce": {
+        "name": "Buffalo Sås (Stark)",
+        "description": ""
       }
     }
   },

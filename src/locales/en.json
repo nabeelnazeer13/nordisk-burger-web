@@ -23,35 +23,94 @@
   },
   "menu": {
     "title": "Our Menu",
-    "description": "Each item is crafted with purpose, using locally sourced ingredients. Nothing unnecessary, everything essential.",
+    "description": "Crafted with Nordic precision and honest flavors. Every burger tells a story of quality and tradition.",
     "burgers": "Burgers",
-    "sides": "Sides",
-    "drinks": "Drinks",
+    "burgersSubtitle": "(All burgers are served on potato bread with crispy lettuce, ketchup, mustard, and our own pickles. Fries & drink included in the price.)",
+    "singlePatty": "Single Patty (100g)",
+    "doublePatty": "Double Patty (2x100g)",
+    "halloumiSubstitute": "Substitute beef with halloumi (Halloumi burger)",
+    "burgerSelection": "Burger Selection",
+    "upgradeFries": "Upgrade Your Fries",
+    "upgradeFriesSubtitle": "Make your fries \"dirty\":",
+    "dirtyFries": "Dirty Fries (250g Fries)",
+    "dipsAndSauces": "Dips & Sauces",
     "fullMenu": "Full Menu & Allergens",
     "items": {
-      "classicWesters": {
-        "name": "Classic Westers",
-        "description": "Premium Swedish beef, homemade aioli, lettuce, tomato, pickled red onion on a freshly baked bun"
+      "westersClassic": {
+        "name": "Westers Classic",
+        "description": "Cheddar, Westers dressing, caramelized onion"
       },
-      "forestMushroom": {
-        "name": "Forest Mushroom",
-        "description": "Premium beef, wild mushrooms, caramelized onions, truffle mayo, aged cheese, and arugula"
+      "fireJam": {
+        "name": "Fire Jam",
+        "description": "Cheddar, fresh jalapeño, pickled jalapeño, caramelized onion, black pepper mayo"
       },
-      "nordicBlue": {
-        "name": "Nordic Blue",
-        "description": "Premium beef, mild blue cheese, caramelized pears, bacon, and balsamic glaze"
+      "smokeStack": {
+        "name": "Smoke Stack",
+        "description": "Bacon jam, cheddar, chipotle mayo, crispy onions"
       },
-      "handCutFries": {
-        "name": "Hand-Cut Potato Fries",
-        "description": "Swedish potatoes with sea salt and herbs"
+      "tripleThreat": {
+        "name": "Triple Threat",
+        "description": "Cheddar, house cheese sauce, pepper jack, pickled red onion"
       },
-      "rootVegetables": {
-        "name": "Root Vegetables",
-        "description": "Seasonal Nordic root vegetables with dill and juniper"
+      "blueMoon": {
+        "name": "Blue Moon",
+        "description": "Blue cheese, caramelized onion, buffalo sauce"
       },
-      "lingonberrySoda": {
-        "name": "Lingonberry Soda",
-        "description": "Housemade with wild lingonberries and minimal sugar"
+      "guldgruvan": {
+        "name": "Guldgruvan",
+        "description": "Truffle mayo, caramelized onion, cheddar"
+      },
+      "bbqJack": {
+        "name": "BBQ Jack (Vegan)",
+        "description": "Pulled jackfruit, BBQ sauce, pickled red onion, vegan cheddar"
+      },
+      "bakedPotato": {
+        "name": "\"Baked Potato\"",
+        "description": "Bacon, scallions, sour cream, aged cheddar"
+      },
+      "cheeseLovers": {
+        "name": "Cheese Lovers",
+        "description": "House cheese sauce, pickled red onion, pickled jalapeño"
+      },
+      "chiliCheeseFries": {
+        "name": "Chili Cheese Fries",
+        "description": "Brisket chili, melted cheese, chopped red onion, sour cream"
+      },
+      "truffleParmesan": {
+        "name": "Truffle Parmesan",
+        "description": "Truffle mayo, grated Grana Padano, pickled red onion"
+      },
+      "garlic": {
+        "name": "Garlic (Vitlök)",
+        "description": ""
+      },
+      "westersDressing": {
+        "name": "Westers Dressing",
+        "description": ""
+      },
+      "bbq": {
+        "name": "BBQ",
+        "description": ""
+      },
+      "chipotleMayo": {
+        "name": "Chipotle Mayo",
+        "description": ""
+      },
+      "houseCheeseSauce": {
+        "name": "House Cheese Sauce",
+        "description": ""
+      },
+      "blackPepperMayo": {
+        "name": "Black Pepper Mayo",
+        "description": ""
+      },
+      "truffleMayo": {
+        "name": "Truffle Mayo",
+        "description": ""
+      },
+      "buffaloSauce": {
+        "name": "Buffalo Sauce (Spicy)",
+        "description": ""
       }
     }
   },

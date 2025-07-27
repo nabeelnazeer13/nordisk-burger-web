@@ -1,54 +1,7 @@
-
 import React, { useEffect } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import enTranslations from "../locales/en.json";
 import svTranslations from "../locales/sv.json";
-
-interface MenuItem {
-  name: string;
-  description: string;
-  price: string;
-  category: string;
-}
-
-const menuItems: MenuItem[] = [
-  {
-    name: "Classic Westers",
-    description: "Premium Swedish beef, homemade aioli, lettuce, tomato, pickled red onion on a freshly baked bun",
-    price: "109 kr",
-    category: "burgers"
-  },
-  {
-    name: "Forest Mushroom",
-    description: "Premium beef, wild mushrooms, caramelized onions, truffle mayo, aged cheese, and arugula",
-    price: "129 kr",
-    category: "burgers"
-  },
-  {
-    name: "Nordic Blue",
-    description: "Premium beef, mild blue cheese, caramelized pears, bacon, and balsamic glaze",
-    price: "139 kr",
-    category: "burgers"
-  },
-  {
-    name: "Hand-Cut Potato Fries",
-    description: "Swedish potatoes with sea salt and herbs",
-    price: "45 kr",
-    category: "sides"
-  },
-  {
-    name: "Root Vegetables",
-    description: "Seasonal Nordic root vegetables with dill and juniper",
-    price: "49 kr",
-    category: "sides"
-  },
-  {
-    name: "Lingonberry Soda",
-    description: "Housemade with wild lingonberries and minimal sugar",
-    price: "39 kr",
-    category: "drinks"
-  },
-];
 
 const Menu: React.FC = () => {
   const { language } = useLanguage();
@@ -79,109 +32,191 @@ const Menu: React.FC = () => {
     };
   }, []);
 
-  const categorizedItems = {
-    burgers: [
-      {
-        name: t.menu.items.classicWesters.name,
-        description: t.menu.items.classicWesters.description,
-        price: "109 kr",
-        category: "burgers"
-      },
-      {
-        name: t.menu.items.forestMushroom.name,
-        description: t.menu.items.forestMushroom.description,
-        price: "129 kr",
-        category: "burgers"
-      },
-      {
-        name: t.menu.items.nordicBlue.name,
-        description: t.menu.items.nordicBlue.description,
-        price: "139 kr",
-        category: "burgers"
-      }
-    ],
-    sides: [
-      {
-        name: t.menu.items.handCutFries.name,
-        description: t.menu.items.handCutFries.description,
-        price: "45 kr",
-        category: "sides"
-      },
-      {
-        name: t.menu.items.rootVegetables.name,
-        description: t.menu.items.rootVegetables.description,
-        price: "49 kr",
-        category: "sides"
-      }
-    ],
-    drinks: [
-      {
-        name: t.menu.items.lingonberrySoda.name,
-        description: t.menu.items.lingonberrySoda.description,
-        price: "39 kr",
-        category: "drinks"
-      }
-    ]
-  };
-
   return (
     <section id="menu" className="section bg-nordic-wood/10">
       <div className="container">
-        <div className="max-w-2xl mx-auto text-center mb-12 fade-in-section">
+        <div className="max-w-3xl mx-auto text-center mb-12 fade-in-section">
           <h2 className="mb-4">{t.menu.title}</h2>
-          <p>{t.menu.description}</p>
+          <p className="text-lg">{t.menu.description}</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16 max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto space-y-16">
+          {/* BURGERS SECTION */}
           <div className="fade-in-section">
-            <h3 className="text-xl font-medium mb-6 pb-2 border-b border-nordic-green/20">{t.menu.burgers}</h3>
-            <div className="space-y-8">
-              {categorizedItems.burgers.map((item, index) => (
-                <div key={index} className="group">
-                  <div className="flex justify-between items-baseline mb-2">
-                    <h4 className="font-serif font-medium text-lg group-hover:text-nordic-green transition-colors duration-200">{item.name}</h4>
-                    <span className="font-medium text-nordic-green">{item.price}</span>
-                  </div>
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-medium mb-3 text-nordic-green">{t.menu.burgers}</h3>
+              <p className="text-sm text-nordic-charcoal/70 mb-6 max-w-3xl mx-auto">
+                {t.menu.burgersSubtitle}
+              </p>
+              
+              {/* Pricing Options */}
+              <div className="grid md:grid-cols-3 gap-4 mb-8 max-w-2xl mx-auto">
+                <div className="bg-nordic-offwhite border border-nordic-wood/30 rounded-lg p-4">
+                  <h4 className="font-medium text-nordic-charcoal">{t.menu.singlePatty}</h4>
+                  <p className="text-xl font-bold text-nordic-green">155 kr</p>
+                </div>
+                <div className="bg-nordic-offwhite border border-nordic-wood/30 rounded-lg p-4">
+                  <h4 className="font-medium text-nordic-charcoal">{t.menu.doublePatty}</h4>
+                  <p className="text-xl font-bold text-nordic-green">179 kr</p>
+                </div>
+                <div className="bg-nordic-offwhite border border-nordic-wood/30 rounded-lg p-4">
+                  <h4 className="font-medium text-nordic-charcoal">{t.menu.halloumiSubstitute}</h4>
+                  <p className="text-xl font-bold text-nordic-green">145 kr</p>
+                </div>
+              </div>
+            </div>
+
+            <h4 className="text-xl font-medium mb-6 text-center text-nordic-charcoal">{t.menu.burgerSelection}</h4>
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                t.menu.items.westersClassic,
+                t.menu.items.fireJam,
+                t.menu.items.smokeStack,
+                t.menu.items.tripleThreat,
+                t.menu.items.blueMoon,
+                t.menu.items.guldgruvan,
+                t.menu.items.bbqJack
+              ].map((item, index) => (
+                <div key={index} className="group bg-nordic-offwhite/50 rounded-lg p-4 hover:bg-nordic-offwhite transition-colors">
+                  <h5 className="font-serif font-medium text-lg group-hover:text-nordic-green transition-colors duration-200 mb-2">
+                    {item.name}
+                  </h5>
                   <p className="text-sm text-nordic-charcoal/75">{item.description}</p>
                 </div>
               ))}
             </div>
           </div>
-          
-          <div>
-            <div className="fade-in-section mb-12">
-              <h3 className="text-xl font-medium mb-6 pb-2 border-b border-nordic-green/20">{t.menu.sides}</h3>
-              <div className="space-y-8">
-                {categorizedItems.sides.map((item, index) => (
-                  <div key={index} className="group">
-                    <div className="flex justify-between items-baseline mb-2">
-                      <h4 className="font-serif font-medium text-lg group-hover:text-nordic-green transition-colors duration-200">{item.name}</h4>
-                      <span className="font-medium text-nordic-green">{item.price}</span>
-                    </div>
-                    <p className="text-sm text-nordic-charcoal/75">{item.description}</p>
-                  </div>
-                ))}
-              </div>
+
+          {/* UPGRADE YOUR FRIES SECTION */}
+          <div className="fade-in-section">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-medium mb-3 text-nordic-green">{t.menu.upgradeFries}</h3>
+              <p className="text-sm text-nordic-charcoal/70 mb-6">
+                {t.menu.upgradeFriesSubtitle}
+              </p>
             </div>
             
-            <div className="fade-in-section">
-              <h3 className="text-xl font-medium mb-6 pb-2 border-b border-nordic-green/20">{t.menu.drinks}</h3>
-              <div className="space-y-8">
-                {categorizedItems.drinks.map((item, index) => (
-                  <div key={index} className="group">
-                    <div className="flex justify-between items-baseline mb-2">
-                      <h4 className="font-serif font-medium text-lg group-hover:text-nordic-green transition-colors duration-200">{item.name}</h4>
-                      <span className="font-medium text-nordic-green">{item.price}</span>
-                    </div>
-                    <p className="text-sm text-nordic-charcoal/75">{item.description}</p>
-                  </div>
-                ))}
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="group bg-nordic-offwhite/50 rounded-lg p-4 hover:bg-nordic-offwhite transition-colors">
+                <div className="flex justify-between items-baseline mb-2">
+                  <h5 className="font-serif font-medium text-lg group-hover:text-nordic-green transition-colors duration-200">
+                    {t.menu.items.bakedPotato.name}
+                  </h5>
+                  <span className="font-medium text-nordic-green">+40 kr</span>
+                </div>
+                <p className="text-sm text-nordic-charcoal/75">{t.menu.items.bakedPotato.description}</p>
               </div>
+              
+              <div className="group bg-nordic-offwhite/50 rounded-lg p-4 hover:bg-nordic-offwhite transition-colors">
+                <div className="flex justify-between items-baseline mb-2">
+                  <h5 className="font-serif font-medium text-lg group-hover:text-nordic-green transition-colors duration-200">
+                    {t.menu.items.cheeseLovers.name}
+                  </h5>
+                  <span className="font-medium text-nordic-green">+35 kr</span>
+                </div>
+                <p className="text-sm text-nordic-charcoal/75">{t.menu.items.cheeseLovers.description}</p>
+              </div>
+              
+              <div className="group bg-nordic-offwhite/50 rounded-lg p-4 hover:bg-nordic-offwhite transition-colors">
+                <div className="flex justify-between items-baseline mb-2">
+                  <h5 className="font-serif font-medium text-lg group-hover:text-nordic-green transition-colors duration-200">
+                    {t.menu.items.chiliCheeseFries.name}
+                  </h5>
+                  <span className="font-medium text-nordic-green">+45 kr</span>
+                </div>
+                <p className="text-sm text-nordic-charcoal/75">{t.menu.items.chiliCheeseFries.description}</p>
+              </div>
+              
+              <div className="group bg-nordic-offwhite/50 rounded-lg p-4 hover:bg-nordic-offwhite transition-colors">
+                <div className="flex justify-between items-baseline mb-2">
+                  <h5 className="font-serif font-medium text-lg group-hover:text-nordic-green transition-colors duration-200">
+                    {t.menu.items.truffleParmesan.name}
+                  </h5>
+                  <span className="font-medium text-nordic-green">+45 kr</span>
+                </div>
+                <p className="text-sm text-nordic-charcoal/75">{t.menu.items.truffleParmesan.description}</p>
+              </div>
+            </div>
+          </div>
+
+          {/* DIRTY FRIES SECTION */}
+          <div className="fade-in-section">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-medium mb-6 text-nordic-green">{t.menu.dirtyFries}</h3>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="group bg-nordic-offwhite/50 rounded-lg p-4 hover:bg-nordic-offwhite transition-colors">
+                <div className="flex justify-between items-baseline mb-2">
+                  <h5 className="font-serif font-medium text-lg group-hover:text-nordic-green transition-colors duration-200">
+                    {t.menu.items.bakedPotato.name}
+                  </h5>
+                  <span className="font-medium text-nordic-green">95 kr</span>
+                </div>
+                <p className="text-sm text-nordic-charcoal/75">{t.menu.items.bakedPotato.description}</p>
+              </div>
+              
+              <div className="group bg-nordic-offwhite/50 rounded-lg p-4 hover:bg-nordic-offwhite transition-colors">
+                <div className="flex justify-between items-baseline mb-2">
+                  <h5 className="font-serif font-medium text-lg group-hover:text-nordic-green transition-colors duration-200">
+                    {t.menu.items.cheeseLovers.name}
+                  </h5>
+                  <span className="font-medium text-nordic-green">90 kr</span>
+                </div>
+                <p className="text-sm text-nordic-charcoal/75">{t.menu.items.cheeseLovers.description}</p>
+              </div>
+              
+              <div className="group bg-nordic-offwhite/50 rounded-lg p-4 hover:bg-nordic-offwhite transition-colors">
+                <div className="flex justify-between items-baseline mb-2">
+                  <h5 className="font-serif font-medium text-lg group-hover:text-nordic-green transition-colors duration-200">
+                    {t.menu.items.chiliCheeseFries.name}
+                  </h5>
+                  <span className="font-medium text-nordic-green">105 kr</span>
+                </div>
+                <p className="text-sm text-nordic-charcoal/75">{t.menu.items.chiliCheeseFries.description}</p>
+              </div>
+              
+              <div className="group bg-nordic-offwhite/50 rounded-lg p-4 hover:bg-nordic-offwhite transition-colors">
+                <div className="flex justify-between items-baseline mb-2">
+                  <h5 className="font-serif font-medium text-lg group-hover:text-nordic-green transition-colors duration-200">
+                    {t.menu.items.truffleParmesan.name}
+                  </h5>
+                  <span className="font-medium text-nordic-green">105 kr</span>
+                </div>
+                <p className="text-sm text-nordic-charcoal/75">{t.menu.items.truffleParmesan.description}</p>
+              </div>
+            </div>
+          </div>
+
+          {/* DIPS & SAUCES SECTION */}
+          <div className="fade-in-section">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-medium mb-6 text-nordic-green">{t.menu.dipsAndSauces}</h3>
+            </div>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+              {[
+                { item: t.menu.items.garlic, price: "12 kr" },
+                { item: t.menu.items.westersDressing, price: "12 kr" },
+                { item: t.menu.items.bbq, price: "12 kr" },
+                { item: t.menu.items.buffaloSauce, price: "12 kr" },
+                { item: t.menu.items.chipotleMayo, price: "15 kr" },
+                { item: t.menu.items.houseCheeseSauce, price: "15 kr" },
+                { item: t.menu.items.blackPepperMayo, price: "15 kr" },
+                { item: t.menu.items.truffleMayo, price: "15 kr" }
+              ].map((sauce, index) => (
+                <div key={index} className="group bg-nordic-offwhite/50 rounded-lg p-3 hover:bg-nordic-offwhite transition-colors text-center">
+                  <h5 className="font-medium text-sm group-hover:text-nordic-green transition-colors duration-200 mb-1">
+                    {sauce.item.name}
+                  </h5>
+                  <p className="text-sm font-medium text-nordic-green">{sauce.price}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
 
-        <div className="text-center mt-12 fade-in-section">
+        <div className="text-center mt-16 fade-in-section">
           <a href="#" className="btn btn-primary rounded-full">{t.menu.fullMenu}</a>
         </div>
       </div>
