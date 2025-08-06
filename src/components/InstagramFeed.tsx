@@ -104,6 +104,12 @@ const InstagramFeed: React.FC = () => {
             </a>
           ))}
         </div>
+        
+        <div className="text-center mt-10">
+          <a href="https://qopla.com/restaurant/burgers-by-westers/q28p0EbrAW/order" target="_blank" rel="noopener noreferrer" className="btn btn-primary rounded-full shadow-lg">
+            {t.instagram.orderOnline}
+          </a>
+        </div>
       </div>
     </section>
   );

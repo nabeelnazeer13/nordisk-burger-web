@@ -60,6 +60,11 @@ const About: React.FC = () => {
                 <span className="font-medium">{t.about.purposefulDesign}</span>
               </div>
             </div>
+            <div className="mt-8">
+              <a href="https://qopla.com/restaurant/burgers-by-westers/q28p0EbrAW/order" target="_blank" rel="noopener noreferrer" className="btn btn-primary rounded-full shadow-lg">
+                {t.about.orderOnline}
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -11,7 +11,8 @@
     "title": "Perfect Simplicity.\nHonest Flavor.",
     "subtitle": "Classic flavours \n Nordic craft ",
     "exploreMenu": "Explore Our Menu",
-    "findUs": "Find Us"
+    "findUs": "Find Us",
+    "orderOnline": "Order Online"
   },
   "about": {
     "title": "Nordic calm. Classic taste",
@@ -19,11 +20,13 @@
     "description2": "Our flavors are classic but our approach to crafting is Scandinavian : beautiful and functional with a respect for quality.",
     "qualityIngredients": "Quality Ingredients",
     "sustainableSourcing": "Sustainable Sourcing",
-    "purposefulDesign": "Purposeful Design"
+    "purposefulDesign": "Purposeful Design",
+    "orderOnline": "Order Online"
   },
   "menu": {
     "title": "Our Menu",
     "description": "Crafted with Nordic precision and honest flavors. Every burger tells a story of quality and tradition.",
+    "orderOnline": "Order Online",
     "burgers": "Burgers",
     "burgersSubtitle": "(All burgers are served on potato bread with crispy lettuce, ketchup, mustard, and our own pickles. \n Fries & drink included in the price.)",
     "singlePatty": "Single Patty (100g)",
@@ -123,12 +126,14 @@
     "signingUp": "Signing up...",
     "privacyText": "By signing up, you agree to our privacy policy. We'll send you occasional news and offers.",
     "successTitle": "Thanks for signing up!",
-    "successDescription": "Your coupon code will be sent to your email shortly."
+    "successDescription": "Your coupon code will be sent to your email shortly.",
+    "orderOnline": "Order Online"
   },
   "instagram": {
     "title": "Follow Our Journey",
     "description": "See what's happening at Burgers by Westers through our Instagram feed.",
-    "handle": "@burgersbywesters"
+    "handle": "@burgersbywesters",
+    "orderOnline": "Order Online"
   },
   "map": {
     "title": "Find Us",
@@ -136,7 +141,8 @@
     "address": "Gjörwellsgatan 28, 112 60 Stockholm",
     "openInMaps": "Open in Google Maps",
     "getDirections": "Get Directions",
-    "clickToOpen": "Click to open in Google Maps"
+    "clickToOpen": "Click to open in Google Maps",
+    "orderOnline": "Order Online"
   },
   "footer": {
     "brandName": "Burgers by Westers",

@@ -42,8 +42,11 @@ const Hero: React.FC = () => {
             <a href="#menu" className="btn btn-primary rounded-full shadow-lg">
               {t.hero.exploreMenu}
             </a>
-            <a href="#map" className="btn bg-nordic-offwhite/90 backdrop-blur-sm border border-nordic-charcoal/20 text-nordic-charcoal hover:bg-nordic-charcoal hover:text-nordic-offwhite rounded-full transition-all duration-300 shadow-lg">
+            <a href="https://share.google/uWtDqkgFTN46KdOXV" target="_blank" rel="noopener noreferrer" className="btn bg-nordic-offwhite/90 backdrop-blur-sm border border-nordic-charcoal/20 text-nordic-charcoal hover:bg-nordic-charcoal hover:text-nordic-offwhite rounded-full transition-all duration-300 shadow-lg">
               {t.hero.findUs}
+            </a>
+            <a href="https://qopla.com/restaurant/burgers-by-westers/q28p0EbrAW/order" target="_blank" rel="noopener noreferrer" className="btn bg-nordic-terracotta text-nordic-offwhite hover:bg-nordic-terracotta/90 rounded-full shadow-lg">
+              {t.hero.orderOnline}
             </a>
           </div>
         </div>

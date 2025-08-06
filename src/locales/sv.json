@@ -11,7 +11,8 @@
     "title": "Perfekt enkelhet.\nÄrlig smak.",
     "subtitle": "Nordiskt inspirerade burgare skapade med precision,\nkvalitetsingredienser och inget onödigt.",
     "exploreMenu": "Utforska vår meny",
-    "findUs": "Hitta oss"
+    "findUs": "Hitta oss",
+    "orderOnline": "Beställ online"
   },
   "about": {
     "title": "Nordiskt lugn. Klassisk smak",
@@ -19,11 +20,13 @@
     "description2": "Våra smaker är klassiska men vårt tillvägagångssätt för att skapa är skandinaviskt: vackert och funktionellt med respekt för kvalitet.",
     "qualityIngredients": "Kvalitetsingredienser",
     "sustainableSourcing": "Hållbar inköp",
-    "purposefulDesign": "Målmedveten design"
+    "purposefulDesign": "Målmedveten design",
+    "orderOnline": "Beställ online"
   },
   "menu": {
     "title": "Vår meny",
     "description": "Skapad med nordisk precision och ärliga smaker. Varje burgare berättar en historia om kvalitet och tradition.",
+    "orderOnline": "Beställ online",
     "burgers": "Burgare",
     "burgersSubtitle": "(Alla burgare serveras på potatisbröd med krispig sallad, ketchup, senap och våra egna pickles. Pommes & dryck ingår i priset.)",
     "singlePatty": "Singel Biff (100g)",
@@ -123,12 +126,14 @@
     "signingUp": "Registrerar...",
     "privacyText": "Genom att registrera dig godkänner du vår integritetspolicy. Vi skickar dig enstaka nyheter och erbjudanden.",
     "successTitle": "Tack för att du registrerade dig!",
-    "successDescription": "Din kupongkod kommer att skickas till din e-post inom kort."
+    "successDescription": "Din kupongkod kommer att skickas till din e-post inom kort.",
+    "orderOnline": "Beställ online"
   },
   "instagram": {
     "title": "Följ vår resa",
     "description": "Se vad som händer på Burgers by Westers genom vårt Instagram-flöde.",
-    "handle": "@burgersbywesters"
+    "handle": "@burgersbywesters",
+    "orderOnline": "Beställ online"
   },
   "map": {
     "title": "Hitta oss",
@@ -136,7 +141,8 @@
     "address": "Gjörwellsgatan 28, 112 60 Stockholm",
     "openInMaps": "Öppna i Google Maps",
     "getDirections": "Få vägbeskrivning",
-    "clickToOpen": "Klicka för att öppna i Google Maps"
+    "clickToOpen": "Klicka för att öppna i Google Maps",
+    "orderOnline": "Beställ online"
   },
   "footer": {
     "brandName": "Burgers by Westers",

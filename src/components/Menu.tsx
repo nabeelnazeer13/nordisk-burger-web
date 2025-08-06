@@ -217,7 +217,12 @@ const Menu: React.FC = () => {
         </div>
 
         <div className="text-center mt-16 fade-in-section">
-          <a href="#" className="btn btn-primary rounded-full">{t.menu.fullMenu}</a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#" className="btn btn-primary rounded-full">{t.menu.fullMenu}</a>
+            <a href="https://qopla.com/restaurant/burgers-by-westers/q28p0EbrAW/order" target="_blank" rel="noopener noreferrer" className="btn bg-nordic-terracotta text-nordic-offwhite hover:bg-nordic-terracotta/90 rounded-full">
+              {t.menu.orderOnline}
+            </a>
+          </div>
         </div>
       </div>
     </section>

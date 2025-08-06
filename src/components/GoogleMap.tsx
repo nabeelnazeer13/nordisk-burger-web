@@ -26,7 +26,7 @@ const GoogleMap: React.FC = () => {
             <div className="relative w-full h-96 md:h-[500px] rounded-xl overflow-hidden shadow-lg border border-nordic-wood/30 group cursor-pointer">
               {/* Static Map Image with Click to Open */}
               <a 
-                href={`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`}
+                href="https://share.google/uWtDqkgFTN46KdOXV"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full h-full relative"
@@ -70,7 +70,7 @@ const GoogleMap: React.FC = () => {
             
             <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href={`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`}
+                href="https://share.google/uWtDqkgFTN46KdOXV"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary rounded-full shadow-lg"
@@ -78,12 +78,12 @@ const GoogleMap: React.FC = () => {
                 {t.map.openInMaps}
               </a>
               <a 
-                href={`https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`}
+                href="https://qopla.com/restaurant/burgers-by-westers/q28p0EbrAW/order"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn bg-nordic-blue text-nordic-charcoal hover:bg-nordic-blue/90 rounded-full shadow-lg"
+                className="btn bg-nordic-terracotta text-nordic-offwhite hover:bg-nordic-terracotta/90 rounded-full shadow-lg"
               >
-                {t.map.getDirections}
+                {t.map.orderOnline}
               </a>
             </div>
           </div>
