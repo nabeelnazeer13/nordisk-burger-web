@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
             <ul className="text-nordic-offwhite/70">
               <li className="flex justify-between mb-2">
                 <span>{t.footer.mondayFriday}</span>
-                <span>10:30 - 14:30</span>
+                <span>10:30 - 20:00</span>
               </li>
               <li className="flex justify-between">
                 <span>{t.footer.saturdaySunday}</span>
