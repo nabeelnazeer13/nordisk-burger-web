@@ -28,48 +28,68 @@ const About: React.FC = () => {
       });
     };
   }, []);
-  return <section id="about" className="section relative bg-white/80 backdrop-blur">
+  return (
+    <section id="about" className="section relative bg-white/80 backdrop-blur">
       <div className="absolute inset-0 pattern-burgers opacity-[0.05] pointer-events-none" />
       <div className="container relative">
-        <div className="fade-in-section text-center mb-12">
-          <h2 className="mb-2">{t.about.title}</h2>
-          
-          <p className="mb-4 max-w-3xl mx-auto">
-            {t.about.description1}
-          </p>
-          <p className="mb-8 max-w-3xl mx-auto">{t.about.description2}</p>
-        </div>
-        
-        <div className="fade-in-section mb-12">
-          <div className="max-w-4xl mx-auto">
-            <div className="relative">
-              <div className="absolute inset-0 bg-nordic-terracotta/20 transform rotate-3 rounded-lg"></div>
-              <img src="/lovable-uploads/NORDISKBURGARE.png" alt="Nordic landscape representing our philosophy" className="w-full h-auto max-h-64 sm:max-h-80 md:h-[500px] object-contain rounded-lg shadow-md relative z-10" />
+        <div className="grid items-center gap-10 lg:grid-cols-2 fade-in-section">
+          {/* Founders photo */}
+          <figure className="relative overflow-hidden rounded-3xl shadow-md">
+            <div className="aspect-[4/3] w-full overflow-hidden">
+              <img
+                src="/lovable-uploads/f24d6d7c-155f-457b-9e79-2a2727cbdae9.png"
+                alt={
+                  language === 'en'
+                    ? 'Two brothers behind Burgers by Westers in the kitchen'
+                    : 'Två bröder bakom Burgers by Westers i köket'
+                }
+                loading="lazy"
+                className="h-full w-full object-cover"
+              />
             </div>
-          </div>
-        </div>
+            <figcaption className="sr-only">{language === 'en' ? 'Founders' : 'Grundare'}</figcaption>
+          </figure>
 
-        <div className="fade-in-section">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
-              <div className="bg-white/70 px-6 py-3 rounded-full shadow-sm">
-                <span className="font-medium">{t.about.qualityIngredients}</span>
-              </div>
-              <div className="bg-white/70 px-6 py-3 rounded-full shadow-sm">
-                <span className="font-medium">{t.about.sustainableSourcing}</span>
-              </div>
-              <div className="bg-white/70 px-6 py-3 rounded-full shadow-sm">
-                <span className="font-medium">{t.about.purposefulDesign}</span>
-              </div>
+          {/* Story */}
+          <article className="space-y-5">
+            <h2 className="mb-2">
+              {language === 'en'
+                ? 'Bold burgers. Global soul.'
+                : 'Djärva burgare. Global själ.'}
+            </h2>
+
+            <p className="text-lg text-nordic-charcoal/80">
+              {language === 'en'
+                ? 'Two brothers built Burgers by Westers with a simple promise: be bold and explore flavors from around the world. With mixed heritage and years of traveling kitchens and street markets, they fuse techniques and traditions into honest, craveable burgers.'
+                : 'Två bröder startade Burgers by Westers med ett enkelt löfte: vara djärva och utforska smaker från hela världen. Med blandad bakgrund och år av resor genom kök och street markets förenar de tekniker och traditioner till ärliga, oemotståndliga burgare.'}
+            </p>
+
+            <p className="text-nordic-charcoal/80">
+              {language === 'en'
+                ? 'Our craft is Scandinavian at heart—clean design, quality ingredients, and precision—while our flavor map spans the globe.'
+                : 'Vårt hantverk är skandinaviskt i grunden—ren design, kvalitetsråvaror och precision—samtidigt som vår smakkompass sträcker sig över hela världen.'}
+            </p>
+
+            <div className="flex flex-wrap gap-3 pt-2">
+              <span className="bg-white/70 px-4 py-2 rounded-full shadow-sm font-medium">{language === 'en' ? 'Bold flavor explorers' : 'Djärva smakutforskare'}</span>
+              <span className="bg-white/70 px-4 py-2 rounded-full shadow-sm font-medium">{language === 'en' ? 'Fusion roots' : 'Rötter i fusion'}</span>
+              <span className="bg-white/70 px-4 py-2 rounded-full shadow-sm font-medium">{language === 'en' ? 'Globally inspired' : 'Globalt inspirerade'}</span>
             </div>
-            <div className="mt-8">
-              <a href="https://qopla.com/restaurant/burgers-by-westers/q28p0EbrAW/order" target="_blank" rel="noopener noreferrer" className="btn btn-primary rounded-full shadow-lg">
+
+            <div className="pt-4">
+              <a
+                href="https://qopla.com/restaurant/burgers-by-westers/q28p0EbrAW/order"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary rounded-full shadow-lg"
+              >
                 {t.about.orderOnline}
               </a>
             </div>
-          </div>
+          </article>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
 export default About;
