@@ -44,7 +44,7 @@ const About: React.FC = () => {
                     : 'Två bröder bakom Burgers by Westers i köket'
                 }
                 loading="lazy"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover object-top"
               />
             </div>
             <figcaption className="sr-only">{language === 'en' ? 'Founders' : 'Grundare'}</figcaption>
