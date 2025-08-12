@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import enTranslations from "../locales/en.json";
 import svTranslations from "../locales/sv.json";
-
 const About: React.FC = () => {
-  const { language } = useLanguage();
+  const {
+    language
+  } = useLanguage();
   const t = language === 'en' ? enTranslations : svTranslations;
-
   useEffect(() => {
     const observerOptions = {
       threshold: 0.2
@@ -33,7 +33,7 @@ const About: React.FC = () => {
       <div className="container relative">
         <div className="fade-in-section text-center mb-12">
           <h2 className="mb-2">{t.about.title}</h2>
-          <p className="text-lg font-semibold text-nordic-terracotta mb-6">Bold flavors. Simple pleasures.</p>
+          
           <p className="mb-4 max-w-3xl mx-auto">
             {t.about.description1}
           </p>
@@ -71,6 +71,5 @@ const About: React.FC = () => {
         </div>
       </div>
     </section>;
-}
-
+};
 export default About;
