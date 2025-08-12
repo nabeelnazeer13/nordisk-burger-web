@@ -20,8 +20,8 @@ const Index: React.FC = () => {
       <Header />
       <main>
         <Hero />
-        <About />
         <Menu />
+        <About />
         <div className="relative">
           <div className="absolute inset-0 bg-nordic-blue/5 skew-y-3 transform -translate-y-1/2"></div>
           <Newsletter />

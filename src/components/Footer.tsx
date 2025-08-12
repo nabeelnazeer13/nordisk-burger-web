@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-medium mb-4">{t.footer.information}</h4>
             <ul className="space-y-2 text-nordic-offwhite/70">
-              <li><a href="#" className="hover:text-nordic-blue transition-colors">{t.footer.allergens}</a></li>
+              <li><a href="/full-menu.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-nordic-blue transition-colors">{t.footer.allergens}</a></li>
               <li><a href="#" className="hover:text-nordic-blue transition-colors">{t.footer.sustainability}</a></li>
               <li><a href="#" className="hover:text-nordic-blue transition-colors">{t.footer.privacyPolicy}</a></li>
               <li><a href="#" className="hover:text-nordic-blue transition-colors">{t.footer.careers}</a></li>

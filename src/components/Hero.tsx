@@ -46,8 +46,8 @@ const Hero: React.FC = () => {
       <div className="absolute top-24 sm:top-20 left-1/2 -translate-x-1/2 z-10">
         <img
           ref={burgerRef}
-          src="/pexels-chevanon-1108117.jpg"
-          alt="Signature burger"
+          src="/lovable-uploads/313109ff-1100-475b-bf95-4972ec557f0f.png"
+          alt="Hero burger on board"
           loading="eager"
           className="w-[420px] sm:w-[520px] md:w-[640px] drop-shadow-2xl will-change-transform"
           style={{ transform: 'translateY(0px) scale(1)', transformOrigin: 'center center' }}

@@ -28,11 +28,12 @@ const Newsletter: React.FC = () => {
   };
 
   return (
-    <section className="section bg-nordic-green text-nordic-offwhite">
-      <div className="container">
-        <div className="max-w-2xl mx-auto text-center">
+    <section className="section relative brand-gradient text-nordic-offwhite overflow-hidden">
+      <div className="absolute inset-0 pattern-burgers opacity-[0.08] pointer-events-none" />
+      <div className="container relative">
+        <div className="max-w-2xl mx-auto text-center bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-lg">
           <h2 className="mb-4">{t.newsletter.title}</h2>
-          <p className="text-nordic-offwhite/80 mb-8">
+          <p className="text-nordic-offwhite/90 mb-8">
             {t.newsletter.description}
           </p>
           

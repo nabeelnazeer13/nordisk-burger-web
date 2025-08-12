@@ -32,7 +32,8 @@ const About: React.FC = () => {
       <div className="absolute inset-0 pattern-burgers opacity-[0.05] pointer-events-none" />
       <div className="container relative">
         <div className="fade-in-section text-center mb-12">
-          <h2 className="mb-6">{t.about.title}</h2>
+          <h2 className="mb-2">{t.about.title}</h2>
+          <p className="text-lg font-semibold text-nordic-terracotta mb-6">Bold flavors. Simple clashes.</p>
           <p className="mb-4 max-w-3xl mx-auto">
             {t.about.description1}
           </p>
@@ -42,7 +43,7 @@ const About: React.FC = () => {
         <div className="fade-in-section mb-12">
           <div className="max-w-4xl mx-auto">
             <div className="relative">
-              <div className="absolute inset-0 bg-nordic-green/10 transform rotate-3 rounded-lg"></div>
+              <div className="absolute inset-0 bg-nordic-terracotta/20 transform rotate-3 rounded-lg"></div>
               <img src="/lovable-uploads/NORDISKBURGARE.png" alt="Nordic landscape representing our philosophy" className="w-full h-auto max-h-64 sm:max-h-80 md:h-[500px] object-contain rounded-lg shadow-md relative z-10" />
             </div>
           </div>
