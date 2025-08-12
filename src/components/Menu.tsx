@@ -43,10 +43,10 @@ const Menu: React.FC = () => {
   ];
 
   const fries = [
-    { slug: 'baked-potato', name: { en: '"Baked Potato"', sv: '"Baked Potato"' }, desc: { en: 'Bacon, scallions, sour cream, aged cheddar', sv: 'Bacon, salladslök, gräddfil, lagrad cheddar' }, img: '/dirty_fries.jpg' },
-    { slug: 'cheese-lovers', name: { en: 'Cheese Lovers', sv: 'Cheese Lovers' }, desc: { en: 'House cheese sauce, pickled red onion, pickled jalapeño', sv: 'Husets ostsås, picklad rödlök, picklad jalapeño' }, img: '/dirty_fries.jpg' },
-    { slug: 'chili-cheese-fries', name: { en: 'Chili Cheese Fries', sv: 'Chili Cheese Fries' }, desc: { en: 'Brisket chili, melted cheese, chopped red onion, sour cream', sv: 'Brisketchili, smält ost, hackad rödlök, gräddfil' }, img: '/dirty_fries.jpg' },
-    { slug: 'truffle-parmesan', name: { en: 'Truffle Parmesan', sv: 'Tryffel Parmesan' }, desc: { en: 'Truffle mayo, grated Grana Padano, pickled red onion', sv: 'Tryffelmajo, riven Grana Padano, picklad rödlök' }, img: '/dirty_fries.jpg' },
+    { slug: 'baked-potato', name: { en: '"Baked Potato"', sv: '"Baked Potato"' }, desc: { en: 'Bacon, scallions, sour cream, aged cheddar', sv: 'Bacon, salladslök, gräddfil, lagrad cheddar' }, img: '/lovable-uploads/a7617517-336a-4b5f-9665-e3b9deb61c3c.png' },
+    { slug: 'cheese-lovers', name: { en: 'Cheese Lovers', sv: 'Cheese Lovers' }, desc: { en: 'House cheese sauce, pickled red onion, pickled jalapeño', sv: 'Husets ostsås, picklad rödlök, picklad jalapeño' }, img: '/lovable-uploads/fb803e9a-3d37-4109-bdb0-1dfce2fc2c25.png' },
+    { slug: 'chili-cheese-fries', name: { en: 'Chili Cheese Fries', sv: 'Chili Cheese Fries' }, desc: { en: 'Brisket chili, melted cheese, chopped red onion, sour cream', sv: 'Brisketchili, smält ost, hackad rödlök, gräddfil' }, img: '/lovable-uploads/ade226b3-d99a-4d4a-ab9c-b94fdd5549fb.png' },
+    { slug: 'truffle-parmesan', name: { en: 'Truffle Parmesan', sv: 'Tryffel Parmesan' }, desc: { en: 'Truffle mayo, grated Grana Padano, pickled red onion', sv: 'Tryffelmajo, riven Grana Padano, picklad rödlök' }, img: '/lovable-uploads/83481cbf-5882-44c6-b634-eff77edc9fe6.png' },
   ];
 
   const dips = [
