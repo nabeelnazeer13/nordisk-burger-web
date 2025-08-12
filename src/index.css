@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -35,6 +36,9 @@
     --input: 20 5% 90%;
     --ring: 142 26% 24%;
 
+    --brand-yellow: 45 96% 61%;
+    --brand-orange: 35 94% 50%;
+
     --radius: 0.5rem;
   }
 
@@ -47,12 +51,13 @@
   }
 
   body {
-    @apply bg-nordic-offwhite text-nordic-charcoal antialiased;
+    @apply text-nordic-charcoal antialiased;
+    background: linear-gradient(135deg, hsl(var(--brand-yellow)) 0%, hsl(var(--brand-orange)) 100%);
     font-feature-settings: "ss01", "ss02", "cv01", "cv02";
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif font-medium tracking-tight;
+    @apply font-serif font-bold tracking-tight;
   }
 
   h1 {
@@ -106,6 +111,10 @@
   .fade-in-section.is-visible {
     @apply animate-fade-in;
   }
+
+  /* Brand gradient and playful pattern */
+  .brand-gradient { background: linear-gradient(135deg, hsl(var(--brand-yellow)) 0%, hsl(var(--brand-orange)) 100%); }
+  .pattern-burgers { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.25' stroke-width='2'%3E%3Cpath d='M20 70c0-10 18-15 40-15s40 5 40 15-18 15-40 15-40-5-40-15z'/%3E%3Cpath d='M25 60c5-8 20-12 35-12s30 4 35 12'/%3E%3Cpath d='M30 55h60'/%3E%3Cpath d='M35 50h50'/%3E%3C/g%3E%3C/svg%3E"); background-size: 240px 240px; background-repeat: repeat; }
 
   /* Nordic-inspired wave footer */
   .wave-footer {

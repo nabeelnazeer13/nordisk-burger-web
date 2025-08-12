@@ -28,8 +28,9 @@ const About: React.FC = () => {
       });
     };
   }, []);
-  return <section id="about" className="section bg-nordic-offwhite">
-      <div className="container">
+  return <section id="about" className="section relative bg-white/80 backdrop-blur">
+      <div className="absolute inset-0 pattern-burgers opacity-[0.05] pointer-events-none" />
+      <div className="container relative">
         <div className="fade-in-section text-center mb-12">
           <h2 className="mb-6">{t.about.title}</h2>
           <p className="mb-4 max-w-3xl mx-auto">
@@ -50,13 +51,13 @@ const About: React.FC = () => {
         <div className="fade-in-section">
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex flex-wrap justify-center gap-4 mb-8">
-              <div className="bg-nordic-wood/30 px-6 py-3 rounded-full">
+              <div className="bg-white/70 px-6 py-3 rounded-full shadow-sm">
                 <span className="font-medium">{t.about.qualityIngredients}</span>
               </div>
-              <div className="bg-nordic-wood/30 px-6 py-3 rounded-full">
+              <div className="bg-white/70 px-6 py-3 rounded-full shadow-sm">
                 <span className="font-medium">{t.about.sustainableSourcing}</span>
               </div>
-              <div className="bg-nordic-wood/30 px-6 py-3 rounded-full">
+              <div className="bg-white/70 px-6 py-3 rounded-full shadow-sm">
                 <span className="font-medium">{t.about.purposefulDesign}</span>
               </div>
             </div>
