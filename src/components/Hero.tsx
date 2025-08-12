@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
                   {index < t.hero.title.split('\n').length - 1 && <br />}
                 </React.Fragment>)}
             </h1>
-            <div className="flex items-center justify-center md:justify-start gap-4 max-w-xs sm:max-w-none mx-auto md:mx-0 rounded">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 sm:gap-4 max-w-none mx-auto md:mx-0 rounded [&>a]:inline-flex [&>a]:items-center [&>a]:justify-center [&>a]:px-6 [&>a]:sm:px-7 [&>a]:py-3 [&>a]:text-center [&>a]:whitespace-nowrap [&>a]:leading-tight">
               <a href="#menu" className="btn btn-accent rounded-full shadow-lg hover-scale mx-[2px]">
                 {t.hero.exploreMenu}
               </a>
