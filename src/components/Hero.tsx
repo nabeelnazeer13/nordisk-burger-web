@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
 
           {/* Headline and actions */}
           <div ref={heroRef} className="max-w-sm sm:max-w-lg md:max-w-xl text-center md:text-left">
-            <h1 className="mb-6 inline-block bg-white/80 backdrop-blur-sm px-6 sm:px-8 py-4 rounded-2xl shadow-lg text-nordic-charcoal">
+            <h1 className="mb-6 block w-full bg-white/80 backdrop-blur-sm px-6 sm:px-8 py-4 rounded-2xl shadow-lg text-nordic-charcoal">
               {t.hero.title.split('\n').map((line, index) => <React.Fragment key={index}>
                   {line}
                   {index < t.hero.title.split('\n').length - 1 && <br />}
