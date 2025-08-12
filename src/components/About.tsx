@@ -33,7 +33,7 @@ const About: React.FC = () => {
       <div className="container relative">
         <div className="fade-in-section text-center mb-12">
           <h2 className="mb-2">{t.about.title}</h2>
-          <p className="text-lg font-semibold text-nordic-terracotta mb-6">Bold flavors. Simple clashes.</p>
+          <p className="text-lg font-semibold text-nordic-terracotta mb-6">Bold flavors. Simple pleasures.</p>
           <p className="mb-4 max-w-3xl mx-auto">
             {t.about.description1}
           </p>

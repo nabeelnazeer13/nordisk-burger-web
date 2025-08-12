@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  return <section id="home" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 brand-gradient">
+  return <section id="home" className="relative min-h-[80vh] flex items-center justify-center overflow-hidden pt-20 brand-gradient">
       <div className="absolute inset-0 pattern-burgers opacity-[0.08]" />
 
       {/* Floating decorative vectors */}
@@ -49,13 +49,13 @@ const Hero: React.FC = () => {
           src="/lovable-uploads/313109ff-1100-475b-bf95-4972ec557f0f.png"
           alt="Hero burger on board"
           loading="eager"
-          className="w-[420px] sm:w-[520px] md:w-[640px] drop-shadow-2xl will-change-transform"
+          className="w-[520px] sm:w-[680px] md:w-[840px] drop-shadow-2xl will-change-transform"
           style={{ transform: 'translateY(0px) scale(1)', transformOrigin: 'center center' }}
         />
       </div>
 
       <div className="container relative z-20" ref={heroRef}>
-        <div className="max-w-sm sm:max-w-lg md:max-w-2xl mx-auto text-center mt-[360px] sm:mt-[380px] md:mt-[460px]">
+        <div className="max-w-sm sm:max-w-lg md:max-w-2xl mx-auto text-center mt-[300px] sm:mt-[320px] md:mt-[380px]">
           <h1 className="mb-4 inline-block bg-white/80 backdrop-blur-sm px-6 py-3 rounded-xl shadow-lg text-nordic-charcoal">
             {t.hero.title.split('\n').map((line, index) => (
               <React.Fragment key={index}>
@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
               </React.Fragment>
             ))}
           </h1>
-          <p className="text-nordic-charcoal/80 mb-8">{language === 'en' ? 'Bold flavors. Simple pleasures.' : 'Djärva smaker. Enkel njutning.'}</p>
+          
           <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-xs sm:max-w-md mx-auto">
             <a href="#menu" className="btn btn-accent rounded-full shadow-lg hover-scale">
               {t.hero.exploreMenu}

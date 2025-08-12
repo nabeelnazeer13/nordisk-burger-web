@@ -41,7 +41,7 @@ const Header: React.FC = () => {
             ${isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none md:pointer-events-auto"}
             ${!isScrolled ? "md:bg-nordic-offwhite/90 md:backdrop-blur-sm md:px-2 sm:md:px-3 lg:md:px-4 md:py-1.5 sm:md:py-2 md:rounded-lg md:shadow-md" : ""}
           `}>
-            <ul className="flex flex-col md:flex-row items-center gap-4 sm:gap-5 md:gap-2 lg:gap-3 xl:gap-4 text-base sm:text-lg md:text-xs lg:text-sm xl:text-base">
+            <ul className="font-serif flex flex-col md:flex-row items-center gap-4 sm:gap-5 md:gap-2 lg:gap-3 xl:gap-4 text-base sm:text-lg md:text-xs lg:text-sm xl:text-base">
               {[
                 { name: t.header.home, href: "#home" },
                 { name: t.header.about, href: "#about" },
