@@ -74,7 +74,7 @@ const Newsletter: React.FC = () => {
           </p>
           
           <div className="mt-8">
-            <a href="https://qopla.com/restaurant/burgers-by-westers/q28p0EbrAW/order" target="_blank" rel="noopener noreferrer" className="btn bg-nordic-terracotta text-nordic-offwhite hover:bg-nordic-terracotta/90 rounded-full shadow-lg">
+            <a href="https://qopla.com/restaurant/burgers-by-westers/q28p0EbrAW/order" target="_blank" rel="noopener noreferrer" className="btn btn-accent rounded-full shadow-lg">
               {t.newsletter.orderOnline}
             </a>
           </div>
