@@ -33,13 +33,13 @@ const Menu: React.FC = () => {
   }, []);
 
   const burgers = [
-    { slug: 'westers-classic', name: { en: 'Westers Classic', sv: 'Westers Classic' }, desc: { en: 'Cheddar, Westers dressing, caramelized onion', sv: 'Cheddar, Westers dressing, karamelliserad lök' }, img: '/lovable-uploads/5ee1fc7f-71f1-4b23-ba41-e1d3fe801f09.png' },
+    { slug: 'westers-classic', name: { en: 'Westers Classic', sv: 'Westers Classic' }, desc: { en: 'Cheddar, Westers dressing, caramelized onion', sv: 'Cheddar, Westers dressing, karamelliserad lök' }, img: '/lovable-uploads/f7cac5e1-fc74-43b4-b099-862183b06a57.png' },
     { slug: 'fire-jam', name: { en: 'Fire Jam', sv: 'Fire Jam' }, desc: { en: 'Cheddar, fresh jalapeño, pickled jalapeño, caramelized onion, black pepper mayo', sv: 'Cheddar, färsk jalapeño, picklad jalapeño, karamelliserad lök, svartpepparmajonnäs' }, img: '/lovable-uploads/9f6a744b-5f90-4bf0-8b6c-3cf7b6392bb4.png' },
     { slug: 'smoke-stack', name: { en: 'Smoke Stack', sv: 'Smoke Stack' }, desc: { en: 'Bacon jam, cheddar, chipotle mayo, crispy onions', sv: 'Baconmarmelad, cheddar, chipotlemajo, krispig lök' }, img: '/lovable-uploads/1618f9a8-2f0c-4ef8-b9c2-11b96b7c2817.png' },
     { slug: 'triple-threat', name: { en: 'Triple Threat', sv: 'Triple Threat' }, desc: { en: 'Cheddar, house cheese sauce, pepper jack, pickled red onion', sv: 'Cheddar, husets ostsås, pepper jack, picklad rödlök' }, img: '/lovable-uploads/cab85e29-a842-48ab-be97-63a031cb0b34.png' },
-    { slug: 'blue-moon', name: { en: 'Blue Moon', sv: 'Blue Moon' }, desc: { en: 'Blue cheese, caramelized onion, buffalo sauce', sv: 'Blåmögelost, karamelliserad lök, buffalo-sås' }, img: '/lovable-uploads/f7cac5e1-fc74-43b4-b099-862183b06a57.png' },
-    { slug: 'guldgruvan', name: { en: 'Guldgruvan', sv: 'Guldgruvan' }, desc: { en: 'Truffle mayo, caramelized onion, cheddar', sv: 'Tryffelmajo, karamelliserad lök, cheddar' }, img: '/lovable-uploads/5f5f911c-58fc-4933-862f-ff17e08de5d7.png' },
-    { slug: 'bbq-jack', name: { en: 'BBQ Jack (Vegan)', sv: 'BBQ Jack (Vegan)' }, desc: { en: 'Pulled jackfruit, BBQ sauce, pickled red onion, vegan cheddar', sv: 'Pulled jackfruit, BBQ-sås, picklad rödlök, vegansk cheddar' }, img: '/pexels-chevanon-1108117.jpg' },
+    { slug: 'blue-moon', name: { en: 'Blue Moon', sv: 'Blue Moon' }, desc: { en: 'Blue cheese, caramelized onion, buffalo sauce', sv: 'Blåmögelost, karamelliserad lök, buffalo-sås' }, img: '/lovable-uploads/9f6a744b-5f90-4bf0-8b6c-3cf7b6392bb4.png' },
+    { slug: 'guldgruvan', name: { en: 'Guldgruvan', sv: 'Guldgruvan' }, desc: { en: 'Truffle mayo, caramelized onion, cheddar', sv: 'Tryffelmajo, karamelliserad lök, cheddar' }, img: '/lovable-uploads/cab85e29-a842-48ab-be97-63a031cb0b34.png' },
+    { slug: 'bbq-jack', name: { en: 'BBQ Jack (Vegan)', sv: 'BBQ Jack (Vegan)' }, desc: { en: 'Pulled jackfruit, BBQ sauce, pickled red onion, vegan cheddar', sv: 'Pulled jackfruit, BBQ-sås, picklad rödlök, vegansk cheddar' }, img: '/lovable-uploads/5f5f911c-58fc-4933-862f-ff17e08de5d7.png' },
   ];
 
   const fries = [
