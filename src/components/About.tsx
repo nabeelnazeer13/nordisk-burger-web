@@ -60,8 +60,8 @@ const About: React.FC = () => {
 
             <p className="text-lg text-nordic-charcoal/80">
               {language === 'en'
-                ? 'Two brothers built Burgers by Westers with a simple promise: be bold and explore flavors from around the world. With mixed heritage and years of traveling kitchens and street markets, they fuse techniques and traditions into honest, craveable burgers.'
-                : 'Två bröder startade Burgers by Westers med ett enkelt löfte: vara djärva och utforska smaker från hela världen. Med blandad bakgrund och år av resor genom kök och street markets förenar de tekniker och traditioner till ärliga, oemotståndliga burgare.'}
+                ? 'Simon and Kristian built Burgers by Westers with a simple promise: be bold and explore flavors from around the world. With mixed heritage and years of traveling kitchens and street markets, they fuse techniques and traditions into honest, craveable burgers.'
+                : 'Simon och Kristian startade Burgers by Westers med ett enkelt löfte: vara djärva och utforska smaker från hela världen. Med blandad bakgrund och år av resor genom kök och street markets förenar de tekniker och traditioner till ärliga, oemotståndliga burgare.'}
             </p>
 
             <p className="text-nordic-charcoal/80">
