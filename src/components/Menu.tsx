@@ -80,7 +80,7 @@ const Menu: React.FC = () => {
                     src={item.img}
                     alt={`${item.name[language]} burger`}
                     loading="lazy"
-                    className={`w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105 ${(item.slug === 'fire-jam' || item.slug === 'triple-threat') ? 'scale-80' : ''}`}
+                    className={`w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105 ${item.slug === 'fire-jam' ? 'scale-80' : item.slug === 'triple-threat' ? 'scale-[0.64]' : ''}`}
                   />
                 </div>
                 <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-nordic-charcoal/70 to-transparent p-4 text-nordic-offwhite">
